@@ -4,6 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashScreen">
+    tools:context=".SplashScreen"
+    android:background="@drawable/fondo_nubes">
+
+    <ImageView
+        android:id="@+id/ivAirMadrid"
+        android:layout_width="234dp"
+        android:layout_height="146dp"
+        android:background="@drawable/logo_blanco"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="200dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <alpha
+        android:duration = "2500"
+        android:fillAfter = "true"
+        android:fromAlpha = "0"
+        android:toAlpha = "1"
+        />
+
+    <!--<rotate
+        android:duration = "2500"
+        android:fromDegrees="40"
+        android:toDegrees="180"
+        />-->
+
+
+   <!-- <translate
+        android:duration="2000"
+        android:fromXDelta="100%p"
+        android:toXDelta="0"/>-->
+
+
 </set>

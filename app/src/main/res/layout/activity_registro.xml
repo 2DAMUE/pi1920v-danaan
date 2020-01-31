@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".RegistroActivity">
 
     <TextView
@@ -16,7 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="70dp"/>
 
     <LinearLayout
         android:id="@+id/llRegistro"
@@ -33,6 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="@string/et_nombre_comp_reg"
+            android:textColorHint="@color/mediumGrey"
             android:background="@drawable/edit_texts"
             android:height="60dp"/>
 
@@ -41,6 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="@string/et_mail_reg"
+            android:textColorHint="@color/mediumGrey"
             android:background="@drawable/edit_texts"
             android:height="60dp"
             android:layout_marginTop="20dp"/>
@@ -50,6 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="@string/et_pass_reg"
+            android:textColorHint="@color/mediumGrey"
             android:background="@drawable/edit_texts"
             android:height="60dp"
             android:layout_marginTop="20dp"
@@ -65,6 +69,7 @@
         android:text="@string/tv_registro"
         android:textColor="@color/white"
         android:background="@drawable/botones"
+        android:onClick="crearCuentaReg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/llRegistro" />
@@ -75,6 +80,7 @@
         android:layout_height="wrap_content"
         android:text="@string/tv_ini_sesion"
         android:layout_marginTop="60dp"
+        android:onClick="iniciarSesion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnCrearCuenta"
