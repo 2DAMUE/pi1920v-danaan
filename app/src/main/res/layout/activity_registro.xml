@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroActivity">
+
+    <TextView
+        android:id="@+id/tvRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_registro"
+        android:textColor="@color/skyBlue"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"/>
+
+    <LinearLayout
+        android:id="@+id/llRegistro"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRegistro">
+
+        <EditText
+            android:id="@+id/etNombreCompReg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/et_nombre_comp_reg"
+            android:background="@drawable/edit_texts"
+            android:height="60dp"/>
+
+        <EditText
+            android:id="@+id/etMailReg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/et_mail_reg"
+            android:background="@drawable/edit_texts"
+            android:height="60dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/etPassReg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/et_pass_reg"
+            android:background="@drawable/edit_texts"
+            android:height="60dp"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCrearCuenta"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/tv_registro"
+        android:textColor="@color/white"
+        android:background="@drawable/botones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llRegistro" />
+
+    <TextView
+        android:id="@+id/tvIniSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_ini_sesion"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCrearCuenta"
+        android:textStyle="bold"
+        android:textColor="@color/mediumGrey"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

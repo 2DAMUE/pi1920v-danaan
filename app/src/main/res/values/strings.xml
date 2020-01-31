@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">AirMadrid</string>
+    <string name="tv_login">Iniciar sesión</string>
+    <string name="et_email">Email</string>
+    <string name="et_contrasena">Contraseña</string>
+    <string name="et_olvido">¿Olvidaste la contraseña?</string>
+    <string name="btn_entrar">Entrar</string>
+    <string name="tv_login_cc">CREAR CUENTA</string>
+    <string name="tv_registro">Crear cuenta</string>
+    <string name="et_nombre_comp_reg">Nombre completo</string>
+    <string name="et_mail_reg">Email</string>
+    <string name="et_pass_reg">Contraseña</string>
+    <string name="tv_ini_sesion">INICIAR SESION</string>
 </resources>
