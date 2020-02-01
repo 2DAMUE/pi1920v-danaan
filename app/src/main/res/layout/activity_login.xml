@@ -2,9 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/background"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+
     tools:context=".LoginActivity">
 
     <TextView
@@ -34,7 +36,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="@string/et_email"
-            android:textColorHint="@color/mediumGrey"
+            style="@style/edit_texts"
+            android:paddingLeft="@dimen/padding"
             android:background="@drawable/edit_texts"
             android:height="60dp"/>
 
@@ -43,7 +46,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="@string/et_contrasena"
-            android:textColorHint="@color/mediumGrey"
+            style="@style/edit_texts"
+            android:paddingLeft="@dimen/padding"
             android:background="@drawable/edit_texts"
             android:height="60dp"
             android:layout_marginTop="20dp"/>
