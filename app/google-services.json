@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1012448192451",
+    "firebase_url": "https://airmadrid-4e44c.firebaseio.com",
+    "project_id": "airmadrid-4e44c",
+    "storage_bucket": "airmadrid-4e44c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012448192451:android:1f3a4ad16a918a85817f76",
+        "android_client_info": {
+          "package_name": "uem.dam.seg.airmadrid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1012448192451-g2cn33t7gr7gb26ipsmgoh8vl7to8m4f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGhH39fvgyVb3tgivBFRV50y3YrThCcWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1012448192451-g2cn33t7gr7gb26ipsmgoh8vl7to8m4f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
