@@ -32,20 +32,22 @@
         <EditText
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="60dp"
             android:hint="@string/et_email"
             style="@style/edit_texts"
-            android:paddingLeft="@dimen/padding"
+            android:inputType="textEmailAddress"
+            android:paddingStart="@dimen/padding"
             android:background="@drawable/edit_texts"
             android:height="60dp"/>
 
         <EditText
             android:id="@+id/etContrasena"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="60dp"
             android:hint="@string/et_contrasena"
             style="@style/edit_texts"
-            android:paddingLeft="@dimen/padding"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/padding"
             android:background="@drawable/edit_texts"
             android:height="60dp"
             android:layout_marginTop="20dp"/>

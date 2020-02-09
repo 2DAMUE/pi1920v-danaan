@@ -17,8 +17,6 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
 
-    static final String CLAVE_EMAIL = "EMAIL";
-
     private FirebaseAuth fa;
     private FirebaseUser fu;
 
@@ -56,13 +54,9 @@ public class LoginActivity extends AppCompatActivity {
                     if (task.isSuccessful()) {
                         fu = fa.getCurrentUser();
 
-                        // limpiamos para que al retroceder al segundo activity salgan los campos vacíos
-                        etEmail.setText("");
-                        etPwd.setText("");
-
                         Intent i = new Intent(LoginActivity.this, MainActivity.class);
-                        i.putExtra(CLAVE_EMAIL, fu.getEmail());
                         startActivity(i);
+
                     } else {
                         Toast.makeText(LoginActivity.this, getString(R.string.msj_no_accede), Toast.LENGTH_SHORT).show();
                     } } });

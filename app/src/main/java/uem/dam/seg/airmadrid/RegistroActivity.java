@@ -57,8 +57,8 @@ public class RegistroActivity extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
                         fu = fa.getCurrentUser();
-                        /*Intent i = new Intent(RegistroActivity.this, LoginActivity.class);
-                        startActivity(i);*/
+                        Intent i = new Intent(RegistroActivity.this, LoginActivity.class);
+                        startActivity(i);
                         Toast.makeText(RegistroActivity.this, getString(R.string.msj_registrado), Toast.LENGTH_SHORT).show();
                     } else {
                         Toast.makeText(RegistroActivity.this, getString(R.string.msj_no_registrado), Toast.LENGTH_SHORT).show();
@@ -73,12 +73,12 @@ public class RegistroActivity extends AppCompatActivity {
     }
 
     private String validarDatos() {
-        //nomCom = etNomCom.getText().toString().trim();
+        nomCom = etNomCom.getText().toString().trim();
         email = etEmail.getText().toString().trim();
         pwd = etPwd.getText().toString().trim();
 
         String msj = null;
-        if (/*nomCom.isEmpty() ||*/ email.isEmpty() || pwd.isEmpty()) {
+        if (nomCom.isEmpty() || email.isEmpty() || pwd.isEmpty()) {
             msj = getString(R.string.no_datos);
         }
 

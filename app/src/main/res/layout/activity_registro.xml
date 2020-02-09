@@ -34,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="@string/et_nombre_comp_reg"
-            android:paddingLeft="@dimen/padding"
+            android:paddingStart="@dimen/padding"
             style="@style/edit_texts"
             android:background="@drawable/edit_texts"
             android:height="60dp"/>
@@ -42,10 +42,11 @@
         <EditText
             android:id="@+id/etMailReg"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="60dp"
             android:hint="@string/et_mail_reg"
-            android:paddingLeft="@dimen/padding"
+            android:paddingStart="@dimen/padding"
             style="@style/edit_texts"
+            android:inputType="textEmailAddress"
             android:background="@drawable/edit_texts"
             android:height="60dp"
             android:layout_marginTop="20dp"/>
@@ -53,10 +54,11 @@
         <EditText
             android:id="@+id/etPassReg"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="60dp"
             android:hint="@string/et_pass_reg"
-            android:paddingLeft="@dimen/padding"
+            android:paddingStart="@dimen/padding"
             style="@style/edit_texts"
+            android:inputType="textPassword"
             android:background="@drawable/edit_texts"
             android:height="60dp"
             android:layout_marginTop="20dp"
