@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <rotate
+        android:duration="8000"
+        android:fromDegrees="-45"
+        android:pivotX="50%"
+        android:pivotY="63.85%"
+        android:toDegrees="360"
+        android:interpolator="@anim/cycle"
+        />
+
+    <alpha
+        android:duration = "2500"
+        android:fillAfter = "true"
+        android:fromAlpha = "0"
+        android:toAlpha = "1"
+        />
+
+</set>

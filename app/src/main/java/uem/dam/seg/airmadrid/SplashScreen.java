@@ -12,6 +12,7 @@ import android.widget.ImageView;
 public class SplashScreen extends AppCompatActivity {
 
     ImageView iv;
+    ImageView ivHelice;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,9 +20,14 @@ public class SplashScreen extends AppCompatActivity {
         setContentView(R.layout.activity_splash_screen);
 
         iv = findViewById(R.id.ivAirMadrid);
+        ivHelice = findViewById(R.id.ivHelices);
 
         Animation animation = AnimationUtils.loadAnimation(this, R.anim.animation);
         iv.startAnimation(animation);
+        ivHelice.startAnimation(animation);
+
+        Animation rotation = AnimationUtils.loadAnimation(this, R.anim.rotation);
+        ivHelice.startAnimation(rotation);
 
         openApp(true);
     }
@@ -38,3 +44,4 @@ public class SplashScreen extends AppCompatActivity {
         }, 5000);
     }
 }
+

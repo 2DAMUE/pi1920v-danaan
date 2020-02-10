@@ -11,11 +11,22 @@
         android:id="@+id/ivAirMadrid"
         android:layout_width="234dp"
         android:layout_height="146dp"
-        android:background="@drawable/logo_blanco"
+        android:background="@drawable/logo_blanco_sin_helices"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginBottom="200dp"/>
+
+    <ImageView
+        android:id="@+id/ivHelices"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/helice2"
+        app:layout_constraintBottom_toBottomOf="@+id/ivAirMadrid"
+        app:layout_constraintEnd_toEndOf="@+id/ivAirMadrid"
+        app:layout_constraintStart_toStartOf="@+id/ivAirMadrid"
+        app:layout_constraintTop_toTopOf="@+id/ivAirMadrid"
+        android:layout_marginBottom="83dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
