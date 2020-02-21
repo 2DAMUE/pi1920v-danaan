@@ -11,12 +11,14 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.tasks.OnSuccessListener;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
@@ -51,9 +53,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        LatLng ubi1 = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(ubi1).title("Estación de xx"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ubi1, 16));
+        LatLng ubi = null;
+        if (miLoc == null) {
+            ubi = new LatLng(40.535162, -3.6168482);
+        } else {
+            Log.i("miLoc", miLoc.getLatitude() + ", " + miLoc.getLongitude());
+            ubi = new LatLng(miLoc.getLatitude(), miLoc.getLongitude());
+        }
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ubi, 16));
 
         mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
         mMap.getUiSettings().setZoomControlsEnabled(true);
