@@ -15,16 +15,16 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
-    private GoogleMap mMap;
-    private LocationManager locManager;
-    private Location miLoc;
     private static final int PETICION_PERMISO_LOCALIZACION = 101;
+
+    private GoogleMap mMap;
+    private Location miLoc;
+    private LocationManager locManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +36,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION}, PETICION_PERMISO_LOCALIZACION);
         } else {
             Log.i("LOC", "con permisos");
+
             locManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
             miLoc = locManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+
         }
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -45,34 +47,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mapFragment.getMapAsync(this);
     }
 
-
-    /**
-     * Manipulates the map once available.
-     * This callback is triggered when the map is ready to be used.
-     * This is where we can add markers or lines, add listeners or move the camera. In this case,
-     * we just add a marker near Sydney, Australia.
-     * If Google Play services is not installed on the device, the user will be prompted to install
-     * it inside the SupportMapFragment. This method will only be triggered once the user has
-     * installed Google Play services and returned to the app.
-     */
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        LatLng mad = null;
+        LatLng ubi1 = new LatLng(-34, 151);
+        mMap.addMarker(new MarkerOptions().position(ubi1).title("Estación de xx"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ubi1, 16));
 
-        if(miLoc != null){
-            mad = new LatLng(40.413825, -3.710445);
-            //mMap.addMarker(new MarkerOptions().position(mad).title("Madrid Centro"));
-        } else {
-            Log.i("miLoc", miLoc.getLatitude() + ", " + miLoc.getLongitude());
-            mad = new LatLng(miLoc.getLatitude(), miLoc.getLongitude());
-
-        }
-
-        mMap.addMarker(new MarkerOptions().position(mad).title("Ubicación actual"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mad, 14));
+        mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
         mMap.getUiSettings().setZoomControlsEnabled(true);
-
     }
 }

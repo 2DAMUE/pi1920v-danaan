@@ -40,9 +40,9 @@ public class RegistroActivity extends AppCompatActivity {
         etEmail = findViewById(R.id.etMailReg);
         etPwd = findViewById(R.id.etPassReg);
 
-        if (fu != null) {
+        /*if (fu != null) {
             etEmail.setText(fu.getEmail());
-        }
+        }*/
     }
 
     public void crearCuentaReg(View view) {
