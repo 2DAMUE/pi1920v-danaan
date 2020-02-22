@@ -16,4 +16,9 @@
     <string name="msj_no_registrado">Usuario no registrado</string>
     <string name="msj_no_accede">Error de acceso</string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_mapa">Mapa</string>
+    <string name="title_home">Home</string>
+    <string name="title_redes">Redes</string>
+    <string name="title_ajustes">Ajustes</string>
 </resources>
