@@ -19,6 +19,8 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
+
+
         iv = findViewById(R.id.ivAirMadrid);
         ivHelice = findViewById(R.id.ivHelices);
 

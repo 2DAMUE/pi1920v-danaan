@@ -1,5 +1,7 @@
 package uem.dam.seg.airmadrid.ui.redes;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,6 +23,13 @@ public class RedesFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+
+        Uri url = Uri.parse("http://www.twitter.com/");
+        Intent navegar = new Intent(Intent.ACTION_VIEW, url);
+        if (navegar.resolveActivity(getActivity().getPackageManager()) != null) {
+            getActivity().startActivity(navegar);
+        }
+
         redesViewModel =
                 ViewModelProviders.of(this).get(RedesViewModel.class);
         View root = inflater.inflate(R.layout.fragment_redes, container, false);

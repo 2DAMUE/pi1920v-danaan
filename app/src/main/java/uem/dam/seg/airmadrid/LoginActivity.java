@@ -54,7 +54,7 @@ public class LoginActivity extends AppCompatActivity {
                     if (task.isSuccessful()) {
                         fu = fa.getCurrentUser();
 
-                        Intent i = new Intent(LoginActivity.this, MapsActivity.class);
+                        Intent i = new Intent(LoginActivity.this, MainActivity.class);
                         startActivity(i);
 
                     } else {
