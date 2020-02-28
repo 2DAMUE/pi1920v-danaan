@@ -22,7 +22,6 @@ import uem.dam.seg.airmadrid.R;
 
 public class ChatFragment extends Fragment {
 
-    private ChatViewModel chatViewModel;
     private WebView webView;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
