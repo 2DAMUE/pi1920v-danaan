@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "540874488321",
-    "firebase_url": "https://airmadrid-91e6e.firebaseio.com",
-    "project_id": "airmadrid-91e6e",
-    "storage_bucket": "airmadrid-91e6e.appspot.com"
+    "project_number": "885260903884",
+    "firebase_url": "https://airmadrid-470f8.firebaseio.com",
+    "project_id": "airmadrid-470f8",
+    "storage_bucket": "airmadrid-470f8.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:540874488321:android:fd2c90ca3702d231e49e00",
+        "mobilesdk_app_id": "1:885260903884:android:7f0217756fd9a675b92969",
         "android_client_info": {
           "package_name": "uem.dam.seg.airmadrid"
         }
       },
       "oauth_client": [
         {
-          "client_id": "540874488321-tcebg8ts536bv12hkus11c3kj7eltho7.apps.googleusercontent.com",
+          "client_id": "885260903884-vi0g365n7u8eqm7es3vt9gig8jacos7o.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDS2IqDE0zXla5nCdpjwOE8vA39k_RPrIc"
+          "current_key": "AIzaSyAkeC3PPjYuzaIWOu2SfWkiw-tofkGLAzs"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "540874488321-tcebg8ts536bv12hkus11c3kj7eltho7.apps.googleusercontent.com",
+              "client_id": "885260903884-vi0g365n7u8eqm7es3vt9gig8jacos7o.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
