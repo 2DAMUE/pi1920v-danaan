@@ -33,13 +33,13 @@ public class RedesFragment extends Fragment {
         redesViewModel =
                 ViewModelProviders.of(this).get(RedesViewModel.class);
         View root = inflater.inflate(R.layout.fragment_redes, container, false);
-        final TextView textView = root.findViewById(R.id.text_redes);
-        redesViewModel.getText().observe(this, new Observer<String>() {
+        // final TextView textView = root.findViewById(R.id.text_redes);
+        /*redesViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
             }
-        });
+        });*/
         return root;
     }
 }

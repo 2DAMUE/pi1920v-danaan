@@ -21,7 +21,7 @@
         android:title="@string/title_redes" />
     <item
         android:id="@+id/navigation_ajustes"
-        android:icon="@drawable/idioma_negro"
+        android:icon="@drawable/settings"
         android:title="@string/title_ajustes" />
 
 </menu>

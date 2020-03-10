@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -22,6 +24,7 @@ public class LoginActivity extends AppCompatActivity {
 
     EditText etEmail;
     EditText etPwd;
+    ProgressBar pb;
 
     String email;
     String pwd;
@@ -36,6 +39,9 @@ public class LoginActivity extends AppCompatActivity {
 
         etEmail = findViewById(R.id.etEmail);
         etPwd = findViewById(R.id.etContrasena);
+        pb = findViewById(R.id.progressBar);
+
+        pb.setVisibility(View.GONE);
 
         if (fu != null) {
             etEmail.setText(fu.getEmail());
@@ -52,10 +58,19 @@ public class LoginActivity extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
+
                         fu = fa.getCurrentUser();
 
-                        Intent i = new Intent(LoginActivity.this, MainActivity.class);
-                        startActivity(i);
+                        pb.setVisibility(View.VISIBLE);
+
+                        new Handler().postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                pb.setVisibility(View.GONE);
+                                Intent i = new Intent(LoginActivity.this, MainActivity.class);
+                                startActivity(i);
+                            }
+                        }, 3000);
 
                     } else {
                         Toast.makeText(LoginActivity.this, getString(R.string.msj_no_accede), Toast.LENGTH_SHORT).show();
