@@ -24,7 +24,7 @@ public class RedesFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        Uri url = Uri.parse("http://www.twitter.com/");
+        Uri url = Uri.parse("https://twitter.com/air_madrid");
         Intent navegar = new Intent(Intent.ACTION_VIEW, url);
         if (navegar.resolveActivity(getActivity().getPackageManager()) != null) {
             getActivity().startActivity(navegar);
