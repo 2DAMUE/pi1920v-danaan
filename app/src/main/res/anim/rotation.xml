@@ -7,8 +7,7 @@
         android:pivotX="50%"
         android:pivotY="63.85%"
         android:toDegrees="360"
-        android:interpolator="@anim/cycle"
-        />
+        android:cycles="100"/>
 
     <alpha
         android:duration = "2500"
