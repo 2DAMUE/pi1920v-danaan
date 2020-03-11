@@ -59,4 +59,15 @@ I want to inform users of this Service that these third parties have access to y
 \nIf you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me.
 \n
         andanauem@gmail.com</string>
+    <string name="tv_titulo_h">Contaminación del aire</string>
+    <string name="tv_localizacion_h">ALGETE, MADRID</string>
+    <string name="tv_cifra_global_h">74</string>
+    <string name="tv_grado_h">MODERADO</string>
+    <string name="tv_pm25"><b>PM2.5</b> μg/m<sup>3</sup></string>
+    <string name="tv_pm10"><b>PM10</b> μg/m<sup>3</sup></string>
+    <string name="tv_so2"><b>SO2</b> μg/m<sup>3</sup></string>
+    <string name="tv_no2"><b>NO2</b> μg/m<sup>3</sup></string>
+    <string name="tv_contaminantes_h">Contaminantes</string>
+    <string name="tv_recomendaciones">Recomendaciones de salud</string>
+    <string name="tv_protocolos">Protocolos activos</string>
 </resources>
