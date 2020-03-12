@@ -118,7 +118,6 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {// Imp
 
 
         map.addMarker(new MarkerOptions().position(new LatLng(40.4238823, -3.7122567)).title("Plaza de España").icon(BitmapDescriptorFactory.fromResource(R.drawable.molino3)));
-
         map.addMarker(new MarkerOptions().position(new LatLng(40.4215533, -3.6823158)).title("C/ Alcalá y C/ O'Donell").icon(BitmapDescriptorFactory.fromResource(R.drawable.molino3)));
         map.addMarker(new MarkerOptions().position(new LatLng(40.4514734, -3.6773491)).title("Avda. Ramón y Cajal  esq. C/ Príncipe de Vergara").icon(BitmapDescriptorFactory.fromResource(R.drawable.molino3)));
         map.addMarker(new MarkerOptions().position(new LatLng(40.4400457, -3.6392422)).title("C/ Arturo Soria  esq. C/  Vizconde de los Asilos").icon(BitmapDescriptorFactory.fromResource(R.drawable.molino3)));

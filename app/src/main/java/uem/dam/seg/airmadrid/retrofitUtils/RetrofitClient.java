@@ -1,19 +1,21 @@
 package uem.dam.seg.airmadrid.retrofitUtils;
 
+import okhttp3.OkHttpClient;
+import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.converter.simplexml.SimpleXmlConverterFactory;
 
-//Prueba Commit
-
 public class RetrofitClient {
-    private static Retrofit retrofit = null;
+    private Retrofit retrofit = null;
 
-    public static Retrofit getClient(String baseUrl) {
+    public Retrofit getClient() {
         if (retrofit==null) {
+            OkHttpClient okBuilder = new OkHttpClient.Builder().addInterceptor(new HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BASIC).setLevel
+                    (HttpLoggingInterceptor.Level.BODY).setLevel(HttpLoggingInterceptor.Level.HEADERS)).build();
             retrofit = new Retrofit.Builder()
-                    .baseUrl(baseUrl)
+                    .baseUrl(APICalidadDelAireService.BASE_URL)
                     .addConverterFactory(SimpleXmlConverterFactory.create())
-                    .build();
+                    .client(okBuilder).build();
         }
         return retrofit;
     }
