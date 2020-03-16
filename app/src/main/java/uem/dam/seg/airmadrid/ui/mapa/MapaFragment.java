@@ -177,7 +177,7 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {// Imp
         map.getUiSettings().setZoomControlsEnabled(true);
 
 
-        map.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
+        /*map.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
             @Override
             public void onMapClick(LatLng latLng) {
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 14));
@@ -189,7 +189,7 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {// Imp
                                 BitmapDescriptorFactory.HUE_GREEN))
                 );
             }
-        });
+        });*/
     }
 
 }
