@@ -156,7 +156,7 @@ public class HomeFragment extends Fragment {
 
     private Location getClosestLocation(Location myLocation) {
         //Devuelve localizacion mas cercana a usuario de la lista de main activity
-        // https://stackoverflow.com/a/35704721/4860142
+        //https://stackoverflow.com/a/35704721/4860142
         //Convertir location a lat long
         List<Location> stations = new ArrayList<>();
         for (LocalizacionEstacion ll : ((MainActivity) getActivity()).localizaciones) {
