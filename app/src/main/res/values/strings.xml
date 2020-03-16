@@ -46,10 +46,25 @@ I want to inform users of this Service that these third parties have access to y
 \nThese Services do not address anyone under the age of 13. I do not knowingly collect personally identifiable information from children under 13. In the case I discover that a child under 13 has provided me with personal information, I immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact me so that I will be able to do necessary actions.
         \n\n<b>Changes to This Privacy Policy</b>
 \nI may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page.
+
         \n\n<b>Contact Us</b>
 \nIf you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me.\n\n
  andanauem@gmail.com</string>
     <string name="tv_politica_privada_titulo">Privacy Policy</string>
     <string name="btn_cerrar_sesion">Cerrar Sesión</string>
     <string name="btn_cambiar_usuario">Cambiar Usuario</string>
+\nIf you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me.
+\n
+        andanauem@gmail.com</string>
+    <string name="tv_titulo_h">Contaminación del aire</string>
+    <string name="tv_localizacion_h">ALGETE, MADRID</string>
+    <string name="tv_cifra_global_h">74</string>
+    <string name="tv_grado_h">MODERADO</string>
+    <string name="tv_pm25"><b>PM2.5</b> μg/m<sup>3</sup></string>
+    <string name="tv_pm10"><b>PM10</b> μg/m<sup>3</sup></string>
+    <string name="tv_so2"><b>SO2</b> μg/m<sup>3</sup></string>
+    <string name="tv_no2"><b>NO2</b> μg/m<sup>3</sup></string>
+    <string name="tv_contaminantes_h">Contaminantes</string>
+    <string name="tv_recomendaciones">Recomendaciones de salud</string>
+    <string name="tv_protocolos">Protocolos activos</string>
 </resources>
