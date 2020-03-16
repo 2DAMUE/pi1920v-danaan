@@ -47,7 +47,7 @@ public class HomeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
-        textView = root.findViewById(R.id.text_home);
+        textView =  root.findViewById(R.id.text_home);
         textView2 = root.findViewById(R.id.text_home2);
         textView3 = root.findViewById(R.id.text_home3);
         textView4 = root.findViewById(R.id.text_home4);
