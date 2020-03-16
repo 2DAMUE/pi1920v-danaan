@@ -278,73 +278,73 @@ public class HomeFragment extends Fragment {
                 response = dato.getH01();
                 break;
             case 2:
-                response = dato.getH02();
+                response = dato.getH01();
                 break;
             case 3:
-                response = dato.getH03();
+                response = dato.getH02();
                 break;
             case 4:
-                response = dato.getH04();
+                response = dato.getH03();
                 break;
             case 5:
-                response = dato.getH05();
+                response = dato.getH04();
                 break;
             case 6:
-                response = dato.getH06();
+                response = dato.getH05();
                 break;
             case 7:
-                response = dato.getH07();
+                response = dato.getH06();
                 break;
             case 8:
-                response = dato.getH08();
+                response = dato.getH07();
                 break;
             case 9:
-                response = dato.getH09();
+                response = dato.getH08();
                 break;
             case 10:
-                response = dato.getH10();
+                response = dato.getH09();
                 break;
             case 11:
-                response = dato.getH11();
+                response = dato.getH10();
                 break;
             case 12:
-                response = dato.getH12();
+                response = dato.getH11();
                 break;
             case 13:
-                response = dato.getH13();
+                response = dato.getH12();
                 break;
             case 14:
-                response = dato.getH14();
+                response = dato.getH13();
                 break;
             case 15:
-                response = dato.getH15();
+                response = dato.getH14();
                 break;
             case 16:
-                response = dato.getH16();
+                response = dato.getH15();
                 break;
             case 17:
-                response = dato.getH17();
+                response = dato.getH16();
                 break;
             case 18:
-                response = dato.getH18();
+                response = dato.getH17();
                 break;
             case 19:
-                response = dato.getH19();
+                response = dato.getH18();
                 break;
             case 20:
-                response = dato.getH20();
+                response = dato.getH19();
                 break;
             case 21:
-                response = dato.getH21();
+                response = dato.getH20();
                 break;
             case 22:
-                response = dato.getH22();
+                response = dato.getH21();
                 break;
             case 23:
-                response = dato.getH23();
+                response = dato.getH22();
                 break;
             case 24:
-                response = dato.getH24();
+                response = dato.getH23();
                 break;
             default:
                 break;
