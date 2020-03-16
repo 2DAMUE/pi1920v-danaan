@@ -19,17 +19,15 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-
-
         iv = findViewById(R.id.ivAirMadrid);
         ivHelice = findViewById(R.id.ivHelices);
 
-        Animation animation = AnimationUtils.loadAnimation(this, R.anim.animation);
+        /*Animation animation = AnimationUtils.loadAnimation(this, R.anim.animation);
         iv.startAnimation(animation);
         ivHelice.startAnimation(animation);
 
         Animation rotation = AnimationUtils.loadAnimation(this, R.anim.rotation);
-        ivHelice.startAnimation(rotation);
+        ivHelice.startAnimation(rotation);*/
 
         openApp(true);
     }
