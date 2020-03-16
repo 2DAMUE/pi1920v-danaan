@@ -53,9 +53,6 @@ I want to inform users of this Service that these third parties have access to y
     <string name="tv_politica_privada_titulo">Privacy Policy</string>
     <string name="btn_cerrar_sesion">Cerrar Sesión</string>
     <string name="btn_cambiar_usuario">Cambiar Usuario</string>
-\nIf you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me.
-\n
-        andanauem@gmail.com</string>
     <string name="tv_titulo_h">Contaminación del aire</string>
     <string name="tv_localizacion_h">ALGETE, MADRID</string>
     <string name="tv_cifra_global_h">74</string>
