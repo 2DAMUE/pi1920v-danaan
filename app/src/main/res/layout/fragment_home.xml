@@ -81,9 +81,8 @@
             <ImageView
                 android:layout_width="8dp"
                 android:layout_height="8dp"
-                android:layout_marginLeft="56dp"
-                android:onClick="infoPM25"
-                android:src="@drawable/information" />
+                android:src="@drawable/information"
+                android:layout_marginLeft="56dp"/>
             <TextView
                 android:id="@+id/tvPM25"
                 android:layout_width="wrap_content"

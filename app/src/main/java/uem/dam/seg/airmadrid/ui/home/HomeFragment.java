@@ -41,6 +41,7 @@ public class HomeFragment extends Fragment {
     private TextView tvPM10;
     private TextView tvSO2;
     private TextView tvNO2;
+    private TextView tvSuma;
     Location closestStationLocation;
 
     private TextView tvLocalizacion;
@@ -55,6 +56,7 @@ public class HomeFragment extends Fragment {
         tvPM10 = root.findViewById(R.id.tvValorPM10);
         tvSO2 = root.findViewById(R.id.tvValorSO2);
         tvNO2 = root.findViewById(R.id.tvValorNO2);
+        tvSuma = root.findViewById(R.id.tvCifraGlobalH);
         tvLocalizacion = root.findViewById(R.id.tvLocalizacionH);
 
         return root;
@@ -124,11 +126,50 @@ public class HomeFragment extends Fragment {
                     //String del codigo de la estacion por su localizacion
                     String codigoEstacion = getStationWithLocation();
 
+                    //String del nombre de la estacion con su localizacion
+                    String nombreEstacion = getNameStationWithLocation();
+                    //Asignamos el nombre de la estación en su TextView
+                    tvLocalizacion.setText(nombreEstacion);
+
                     // Cogemos el valor para esa hora y Mostramos el valor
+
                     tvPM25.setText(getMagnitud9FromEstacion(codigoEstacion, magnitudes9));
+                    int iTvPM25;
+                    //Controlamos con try catch si la estacion devuelve dicho valor (hay algunas que no dan todos los valores)
+                    try{
+                        iTvPM25 = Integer.parseInt(tvPM25.getText().toString());
+                    }catch (NumberFormatException excepcion){
+                        iTvPM25 = 0;
+                    }
+
                     tvPM10.setText(getMagnitud8FromEstacion(codigoEstacion, magnitudes8));
+                    int iTvPM10;
+                    try{
+                        iTvPM10 = Integer.parseInt(tvPM10.getText().toString());
+                    }catch(NumberFormatException excepcion){
+                        iTvPM10 = 0;
+                    }
+
                     tvSO2.setText(getMagnitud1FromEstacion(codigoEstacion, magnitudes1));
+                    int iTvSO2;
+                    try{
+                        iTvSO2 = Integer.parseInt(tvSO2.getText().toString());
+                    }catch(NumberFormatException excepcion){
+                        iTvSO2 = 0;
+                    }
+
                     tvNO2.setText(getMagnitud10FromEstacion(codigoEstacion, magnitudes10));
+                    int iTvNO2;
+                    try{
+                        iTvNO2 = Integer.parseInt(tvNO2.getText().toString());
+                    }catch(NumberFormatException excepcion){
+                        iTvNO2 = 0;
+                    }
+
+                    //Ponderacion de contaminantes
+                    int suma = iTvNO2 + iTvSO2 + iTvPM10 + iTvPM25;
+                    tvSuma.setText(Integer.toString(suma));
+
                 } else {
                     Log.e("ERROR", String.valueOf(response.code()));
                     Toast.makeText(getContext(),
@@ -159,6 +200,22 @@ public class HomeFragment extends Fragment {
 
         return response;
     }
+
+    //Recogida de la estacion segun localizacion
+    private String getNameStationWithLocation() {
+        String response = "";
+        for (LocalizacionEstacion dh : ((MainActivity) getActivity()).localizaciones) {
+            if (dh.getLocalizacion().latitude == closestStationLocation.getLatitude() &&
+                    dh.getLocalizacion().longitude == closestStationLocation.getLongitude()) {
+                response = dh.getNombre();
+            }
+        }
+
+        return response;
+    }
+
+
+
     //Recogida de la ubicacion  mas cercana
     private Location getClosestLocation(Location myLocation) {
         //Devuelve localizacion mas cercana a usuario de la lista de main activity
@@ -224,36 +281,6 @@ public class HomeFragment extends Fragment {
         }
         return response;
     }
-
-    /*private List<String> getAllStations(List<Datos.DatoHorario> allItems) {
-        List<String> response = new ArrayList<>();
-        for (Datos.DatoHorario dh : allItems) {
-            if (!response.contains(dh.getEstacion())) {
-                response.add(dh.getEstacion());
-            }
-        }
-        return response;
-    }*/
-
-    /*private List<Datos.DatoHorario> getSelectedItems(List<Datos.DatoHorario> allItems) {
-        List<Datos.DatoHorario> response = new ArrayList<>();
-        for (Datos.DatoHorario dh : allItems) {
-
-    Magnitudes a recoger
-    Dióxido de Azufre SO2
-    Dióxido de Nitrógeno NO2
-    Partículas < 2.5 µm PM2.5
-    Partículas < 10 µm PM10
-
-            if (dh.getMagnitud().equals("1") ||
-                    dh.getMagnitud().equals("8") ||
-                    dh.getMagnitud().equals("9") ||
-                    dh.getMagnitud().equals("10")) {
-                response.add(dh);
-            }
-        }
-        return response;
-    }*/
 
     private Datos.DatoHorario getSelectedItem(String estacion, String magnitud, List<Datos.DatoHorario> allItems) {
         Datos.DatoHorario response = new Datos.DatoHorario();
