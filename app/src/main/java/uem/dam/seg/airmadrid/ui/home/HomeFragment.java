@@ -96,6 +96,8 @@ public class HomeFragment extends Fragment {
                     List<Datos.DatoHorario> magnitudes8 = new ArrayList<>();
                     List<Datos.DatoHorario> magnitudes9 = new ArrayList<>();
                     List<Datos.DatoHorario> magnitudes10 = new ArrayList<>();
+                    List<Datos.DatoHorario> magnitudes6 = new ArrayList<>();
+                    List<Datos.DatoHorario> magnitudes14 = new ArrayList<>();
 
                     //Add de magnitudes a las listas
                     for (LocalizacionEstacion estacion : estaciones) {
@@ -120,6 +122,20 @@ public class HomeFragment extends Fragment {
                         Datos.DatoHorario dh = getSelectedItem(estacion.getCodigo(), "10", lista);
                         if (dh != null) {
                             magnitudes10.add(dh);
+                        }
+                    }
+
+                    for (LocalizacionEstacion estacion : estaciones) {
+                        Datos.DatoHorario dh = getSelectedItem(estacion.getCodigo(), "6", lista);
+                        if (dh != null) {
+                            magnitudes6.add(dh);
+                        }
+                    }
+
+                    for (LocalizacionEstacion estacion : estaciones) {
+                        Datos.DatoHorario dh = getSelectedItem(estacion.getCodigo(), "14", lista);
+                        if (dh != null) {
+                            magnitudes14.add(dh);
                         }
                     }
 
@@ -170,8 +186,25 @@ public class HomeFragment extends Fragment {
                         tvNO2.setText(R.string.dato_no_recogido);
                     }
 
+
+                    String SCO = getMagnitud6FromEstacion(codigoEstacion, magnitudes6).toString();
+                    int CO;
+                    try{
+                        CO = Integer.parseInt(SCO);
+                    }catch(NumberFormatException excepcion){
+                        CO = 0;
+                    }
+
+                    String SO3 = getMagnitud14FromEstacion(codigoEstacion, magnitudes14).toString();
+                    int O3;
+                    try{
+                        O3 = Integer.parseInt(SO3);
+                    }catch(NumberFormatException excepcion){
+                        O3 = 0;
+                    }
+
                     //Ponderacion de contaminantes
-                    int suma = iTvNO2 + iTvSO2 + iTvPM10 + iTvPM25;
+                    int suma = iTvNO2 + iTvSO2 + iTvPM10 + iTvPM25 + CO + O3;
                     tvSuma.setText(Integer.toString(suma));
 
                 } else {
@@ -192,6 +225,8 @@ public class HomeFragment extends Fragment {
             }
         });
     }
+
+
     //Recogida de la estacion segun localizacion
     private String getStationWithLocation() {
         String response = "";
@@ -247,6 +282,26 @@ public class HomeFragment extends Fragment {
     }
     //Obtenemos magnitudes de la lista de los datos horarios
     private String getMagnitud9FromEstacion(String estacion, List<Datos.DatoHorario> allItems) {
+        String response = "";
+        for (Datos.DatoHorario dato : allItems) {
+            if (dato.getEstacion().equals(estacion)) {
+                response = getValueForHour(dato);
+            }
+        }
+        return response;
+    }
+
+    private Object getMagnitud6FromEstacion(String estacion, List<Datos.DatoHorario> allItems) {
+        String response = "";
+        for (Datos.DatoHorario dato : allItems) {
+            if (dato.getEstacion().equals(estacion)) {
+                response = getValueForHour(dato);
+            }
+        }
+        return response;
+    }
+
+    private Object getMagnitud14FromEstacion(String estacion, List<Datos.DatoHorario> allItems) {
         String response = "";
         for (Datos.DatoHorario dato : allItems) {
             if (dato.getEstacion().equals(estacion)) {
