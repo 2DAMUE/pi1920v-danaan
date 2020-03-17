@@ -65,4 +65,6 @@ I want to inform users of this Service that these third parties have access to y
     <string name="tv_recomendaciones">Recomendaciones de salud</string>
     <string name="tv_protocolos">Protocolos activos</string>
     <string name="error_vuelve">Ooops! Vuelve a intentarlo</string>
+    <string name="no_mide_gases">La estación de tu zona no mide esos gases</string>
+    <string name="no_fart">-</string>
 </resources>
