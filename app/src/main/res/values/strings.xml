@@ -72,4 +72,5 @@ I want to inform users of this Service that these third parties have access to y
     <string name="info_SO2">Información sobre el SO2</string>
     <string name="titulo_info_NO2">Información sobre el NO2</string>
     <string name="info_NO2">Información sobre el NO2</string>
+    <string name="error_vuelve">Ooops! Vuelve a intentarlo</string>
 </resources>

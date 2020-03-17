@@ -78,11 +78,6 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {// Imp
 
             });
         }
-
-        /*SupportMapFragment mapFragment = (SupportMapFragment)getActivity().getSupportFragmentManager()
-                .findFragmentById(R.id.navigation_mapa);
-        mapFragment.getMapAsync(this);*/
-
         return root;
     }
 
@@ -98,9 +93,11 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {// Imp
         });
 
         localizaciones = ((MainActivity) getActivity()).localizaciones;
-        mapView.onCreate(savedInstanceState);//Llamada a creado de mapa Oncreate de la vista
-        // Gets to GoogleMap from the MapView and does initialization stuff
-        mapView.getMapAsync(this);//Conecta con Server Google
+        //Llamada a creado de mapa Oncreate de la vista
+        mapView.onCreate(savedInstanceState);
+        // Llega a GoogleMap desde MapView y hace cosas de inicialización
+        //Conecta con Server Google
+        mapView.getMapAsync(this);
     }
 
     //Continua despues de pausarse se va actualizando
@@ -119,32 +116,6 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {// Imp
         } else {
             uem = new LatLng(miLoc.getLatitude(), miLoc.getLongitude());
         }
-        /*private GoogleMap map, plazaDeEspaña, alcala, ramonYCajal, arturoSoria, juanPenialver, farolillo, casaDeCampo, jupiter, plazaDelCarmen, moratalaz;
-        private GoogleMap pabloIglesias, betanzos, arrolloOlivar, juanDeMariana, joseGutierrez, venezuela, plazaCastilla, laGavia, rianio, plazaEliptica;
-        private GoogleMap princesaDeEboli, laGuardia, juanCarlosI, tresOlivos;*/
-
-
-        /*localizaciones.add(new LatLng(40.4238823, -3.7122567));
-        localizaciones.add(new LatLng(40.4238823, -3.7122567));
-        localizaciones.add(new LatLng(40.4238823, -3.7122567));
-        localizaciones.add(new LatLng(40.4238823, -3.7122567));
-        localizaciones.add(new LatLng(40.4238823, -3.7122567));
-        localizaciones.add(new LatLng(40.4238823, -3.7122567));
-        localizaciones.add(new LatLng(40.4238823, -3.7122567));
-        localizaciones.add(new LatLng(40.4238823, -3.7122567));
-        localizaciones.add(new LatLng(40.4238823, -3.7122567));
-        localizaciones.add(new LatLng(40.4238823, -3.7122567));
-        localizaciones.add(new LatLng(40.4238823, -3.7122567));
-        localizaciones.add(new LatLng(40.4238823, -3.7122567));
-        localizaciones.add(new LatLng(40.4238823, -3.7122567));
-        localizaciones.add(new LatLng(40.4238823, -3.7122567));
-        localizaciones.add(new LatLng(40.4238823, -3.7122567));
-        localizaciones.add(new LatLng(40.4238823, -3.7122567));
-        localizaciones.add(new LatLng(40.4238823, -3.7122567));
-        localizaciones.add(new LatLng(40.4238823, -3.7122567));
-        localizaciones.add(new LatLng(40.4238823, -3.7122567));
-        localizaciones.add(new LatLng(40.4238823, -3.7122567));*/
-
 
         map.addMarker(new MarkerOptions().position(localizaciones.get(0).getLocalizacion()).title("Plaza de España").icon(BitmapDescriptorFactory.fromResource(R.drawable.molino3)));
         map.addMarker(new MarkerOptions().position(localizaciones.get(1).getLocalizacion()).title("Escuelas Aguirre").icon(BitmapDescriptorFactory.fromResource(R.drawable.molino3)));
@@ -175,21 +146,6 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {// Imp
 
         map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
         map.getUiSettings().setZoomControlsEnabled(true);
-
-
-        /*map.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
-            @Override
-            public void onMapClick(LatLng latLng) {
-                map.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 14));
-                map.addMarker(new MarkerOptions()
-                        .position(latLng)
-                        .title("Nueva posición")
-                        .snippet("Lat: " + latLng.latitude + ", Long: " + latLng.longitude)
-                        .icon(BitmapDescriptorFactory.defaultMarker(
-                                BitmapDescriptorFactory.HUE_GREEN))
-                );
-            }
-        });*/
     }
 
 }

@@ -1,6 +1,5 @@
 package uem.dam.seg.airmadrid.ui.ajustes;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +9,6 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
-import uem.dam.seg.airmadrid.LoginActivity;
 import uem.dam.seg.airmadrid.R;
 
 public class AjustesFragment extends Fragment {
