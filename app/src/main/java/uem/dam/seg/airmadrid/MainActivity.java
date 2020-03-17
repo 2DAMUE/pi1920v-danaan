@@ -1,13 +1,9 @@
 package uem.dam.seg.airmadrid;
 
-import android.content.Context;
-import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -99,5 +95,13 @@ public class MainActivity extends AppCompatActivity {
 
         AlertDialog dialog = builder.create();
         dialog.show();
+    }
+
+    public void escenarios(View view) {
+        Uri url = Uri.parse("https://developer.android.com/guide/components/intents-filters.html");
+        Intent navegar = new Intent(Intent.ACTION_VIEW, url);
+        if (navegar.resolveActivity(getPackageManager()) != null) {
+            startActivity(navegar);
+        }
     }
 }

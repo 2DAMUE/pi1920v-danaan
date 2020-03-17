@@ -8,7 +8,7 @@
     <TextView
         android:id="@+id/tvPoliticaPrivadaTitulo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:background="@color/skyBlue"
         android:text="@string/tv_politica_privada_titulo"
         android:textColor="@color/white"
