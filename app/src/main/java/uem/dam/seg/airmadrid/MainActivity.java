@@ -6,8 +6,10 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -98,5 +100,41 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navView, navController);
 
 
+    }
+
+    public void infoPM25(View view) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(R.string.titulo_info_PM25);
+        builder.setMessage(R.string.titulo_info_PM25);
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
+    public void infoPM10(View view) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(R.string.titulo_info_PM10);
+        builder.setMessage(R.string.titulo_info_PM10);
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
+    public void infoSO2(View view) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(R.string.titulo_info_SO2);
+        builder.setMessage(R.string.titulo_info_SO2);
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
+    public void infoNO2(View view) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(R.string.titulo_info_NO2);
+        builder.setMessage(R.string.titulo_info_NO2);
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 }

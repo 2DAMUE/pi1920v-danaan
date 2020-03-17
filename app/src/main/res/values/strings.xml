@@ -64,4 +64,12 @@ I want to inform users of this Service that these third parties have access to y
     <string name="tv_contaminantes_h">Contaminantes</string>
     <string name="tv_recomendaciones">Recomendaciones de salud</string>
     <string name="tv_protocolos">Protocolos activos</string>
+    <string name="titulo_info_PM25">Información sobre el PM25</string>
+    <string name="info_PM25">Información sobre el PM25</string>
+    <string name="titulo_info_PM10">Información sobre el PM10</string>
+    <string name="info_PM10">Información sobre el PM10</string>
+    <string name="titulo_info_SO2">Información sobre el SO2</string>
+    <string name="info_SO2">Información sobre el SO2</string>
+    <string name="titulo_info_NO2">Información sobre el NO2</string>
+    <string name="info_NO2">Información sobre el NO2</string>
 </resources>

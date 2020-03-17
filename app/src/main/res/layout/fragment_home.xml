@@ -77,11 +77,13 @@
             android:orientation="horizontal"
             android:gravity="center"
             android:layout_marginTop="16dp">
+
             <ImageView
                 android:layout_width="8dp"
                 android:layout_height="8dp"
-                android:src="@drawable/information"
-                android:layout_marginLeft="56dp"/>
+                android:layout_marginLeft="56dp"
+                android:onClick="infoPM25"
+                android:src="@drawable/information" />
             <TextView
                 android:id="@+id/tvPM25"
                 android:layout_width="wrap_content"
@@ -93,7 +95,8 @@
             <ImageView
                 android:layout_width="8dp"
                 android:layout_height="8dp"
-                android:src="@drawable/information"/>
+                android:src="@drawable/information"
+                android:onClick="infoPM10"/>
             <TextView
                 android:id="@+id/tvPM10"
                 android:layout_width="wrap_content"
@@ -134,7 +137,8 @@
                 android:layout_width="8dp"
                 android:layout_height="8dp"
                 android:src="@drawable/information"
-                android:layout_marginLeft="56dp"/>
+                android:layout_marginLeft="56dp"
+                android:onClick="infoSO2"/>
             <TextView
                 android:id="@+id/tvSO2"
                 android:layout_width="wrap_content"
@@ -146,7 +150,8 @@
                 android:layout_width="8dp"
                 android:layout_height="8dp"
                 android:src="@drawable/information"
-                android:layout_marginLeft="9dp"/>
+                android:layout_marginLeft="9dp"
+                android:onClick="infoNO2"/>
             <TextView
                 android:id="@+id/tvNO2"
                 android:layout_width="wrap_content"
