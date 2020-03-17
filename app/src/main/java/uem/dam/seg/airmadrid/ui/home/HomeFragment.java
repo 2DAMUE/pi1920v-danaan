@@ -147,6 +147,7 @@ public class HomeFragment extends Fragment {
                     //Asignamos el nombre de la estación en su TextView
                     tvLocalizacion.setText(nombreEstacion);
 
+
                     // Cogemos el valor para esa hora y Mostramos el valor
 
                     tvPM25.setText(getMagnitud9FromEstacion(codigoEstacion, magnitudes9));
@@ -172,6 +173,8 @@ public class HomeFragment extends Fragment {
                     int iTvSO2;
                     try{
                         iTvSO2 = Integer.parseInt(tvSO2.getText().toString());
+                        double iPSO2 = iTvSO2 * 0.286;
+
                     }catch(NumberFormatException excepcion){
                         iTvSO2 = 0;
                         tvSO2.setText(R.string.dato_no_recogido);
@@ -181,6 +184,7 @@ public class HomeFragment extends Fragment {
                     int iTvNO2;
                     try{
                         iTvNO2 = Integer.parseInt(tvNO2.getText().toString());
+                        double iPNO2 = iTvNO2 * 0.5;
                     }catch(NumberFormatException excepcion){
                         iTvNO2 = 0;
                         tvNO2.setText(R.string.dato_no_recogido);
@@ -191,6 +195,7 @@ public class HomeFragment extends Fragment {
                     int CO;
                     try{
                         CO = Integer.parseInt(SCO);
+                        double iPCO = CO * 10;
                     }catch(NumberFormatException excepcion){
                         CO = 0;
                     }
@@ -199,6 +204,7 @@ public class HomeFragment extends Fragment {
                     int O3;
                     try{
                         O3 = Integer.parseInt(SO3);
+                        double iP03 = O3 * 0.556;
                     }catch(NumberFormatException excepcion){
                         O3 = 0;
                     }
