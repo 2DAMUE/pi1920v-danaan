@@ -171,9 +171,10 @@ public class HomeFragment extends Fragment {
 
                     tvSO2.setText(getMagnitud1FromEstacion(codigoEstacion, magnitudes1));
                     int iTvSO2;
+                    double ipSO2 = 0;
                     try{
                         iTvSO2 = Integer.parseInt(tvSO2.getText().toString());
-                        double iPSO2 = iTvSO2 * 0.286;
+                        ipSO2 = iTvSO2 * 0.286;
 
                     }catch(NumberFormatException excepcion){
                         iTvSO2 = 0;
@@ -182,9 +183,10 @@ public class HomeFragment extends Fragment {
 
                     tvNO2.setText(getMagnitud10FromEstacion(codigoEstacion, magnitudes10));
                     int iTvNO2;
+                    double ipNO2 = 0;
                     try{
                         iTvNO2 = Integer.parseInt(tvNO2.getText().toString());
-                        double iPNO2 = iTvNO2 * 0.5;
+                        ipNO2 = iTvNO2 * 0.5;
                     }catch(NumberFormatException excepcion){
                         iTvNO2 = 0;
                         tvNO2.setText(R.string.dato_no_recogido);
@@ -193,25 +195,53 @@ public class HomeFragment extends Fragment {
 
                     String SCO = getMagnitud6FromEstacion(codigoEstacion, magnitudes6).toString();
                     int CO;
+                    double ipCO = 0;
                     try{
                         CO = Integer.parseInt(SCO);
-                        double iPCO = CO * 10;
+                        ipCO = CO * 10;
                     }catch(NumberFormatException excepcion){
                         CO = 0;
                     }
 
                     String SO3 = getMagnitud14FromEstacion(codigoEstacion, magnitudes14).toString();
                     int O3;
+                    double ipO3 = 0;
                     try{
                         O3 = Integer.parseInt(SO3);
-                        double iP03 = O3 * 0.556;
+                        ipO3 = O3 * 0.556;
                     }catch(NumberFormatException excepcion){
                         O3 = 0;
                     }
 
-                    //Ponderacion de contaminantes
+
+
+                    double ipMax = 0;
+
+                    if (iTvPM25 > ipMax){
+                        ipMax = iTvPM25;
+                    }
+                    if (iTvPM10 > ipMax){
+                        ipMax = iTvPM10;
+                    }
+                    if (ipSO2 > ipMax){
+                        ipMax = ipSO2;
+                    }
+                    if (ipNO2 > ipMax){
+                        ipMax = ipNO2;
+                    }
+                    if (ipCO > ipMax){
+                        ipMax = ipCO;
+                    }
+                    if (ipO3 > ipMax){
+                        ipMax = ipO3;
+                    }
+
+                    tvSuma.setText(Double.toString(ipMax));
+
+
+                    /*//Ponderacion de contaminantes
                     int suma = iTvNO2 + iTvSO2 + iTvPM10 + iTvPM25 + CO + O3;
-                    tvSuma.setText(Integer.toString(suma));
+                    tvSuma.setText(Integer.toString(suma));*/
 
                 } else {
                     Log.e("ERROR", String.valueOf(response.code()));
@@ -219,6 +249,7 @@ public class HomeFragment extends Fragment {
                             R.string.error_vuelve + response.code(),
                             Toast.LENGTH_LONG).show();
                 }
+
 
             }
 
