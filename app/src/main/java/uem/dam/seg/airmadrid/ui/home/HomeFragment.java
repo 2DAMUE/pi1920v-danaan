@@ -222,36 +222,6 @@ public class HomeFragment extends Fragment {
         return response;
     }
 
-    /*private List<String> getAllStations(List<Datos.DatoHorario> allItems) {
-        List<String> response = new ArrayList<>();
-        for (Datos.DatoHorario dh : allItems) {
-            if (!response.contains(dh.getEstacion())) {
-                response.add(dh.getEstacion());
-            }
-        }
-        return response;
-    }*/
-
-    /*private List<Datos.DatoHorario> getSelectedItems(List<Datos.DatoHorario> allItems) {
-        List<Datos.DatoHorario> response = new ArrayList<>();
-        for (Datos.DatoHorario dh : allItems) {
-
-    Magnitudes a recoger
-    Dióxido de Azufre SO2
-    Dióxido de Nitrógeno NO2
-    Partículas < 2.5 µm PM2.5
-    Partículas < 10 µm PM10
-
-            if (dh.getMagnitud().equals("1") ||
-                    dh.getMagnitud().equals("8") ||
-                    dh.getMagnitud().equals("9") ||
-                    dh.getMagnitud().equals("10")) {
-                response.add(dh);
-            }
-        }
-        return response;
-    }*/
-
     private Datos.DatoHorario getSelectedItem(String estacion, String magnitud, List<Datos.DatoHorario> allItems) {
         Datos.DatoHorario response = new Datos.DatoHorario();
         for (Datos.DatoHorario dh : allItems) {
