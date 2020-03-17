@@ -43,6 +43,8 @@ public class HomeFragment extends Fragment {
     private TextView tvNO2;
     Location closestStationLocation;
 
+    private TextView tvLocalizacion;
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel =
@@ -53,6 +55,7 @@ public class HomeFragment extends Fragment {
         tvPM10 = root.findViewById(R.id.tvValorPM10);
         tvSO2 = root.findViewById(R.id.tvValorSO2);
         tvNO2 = root.findViewById(R.id.tvValorNO2);
+        tvLocalizacion = root.findViewById(R.id.tvLocalizacionH);
 
         return root;
     }
