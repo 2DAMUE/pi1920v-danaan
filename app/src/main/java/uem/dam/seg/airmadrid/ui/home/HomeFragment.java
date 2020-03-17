@@ -13,7 +13,6 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.google.android.gms.location.LocationServices;
@@ -65,14 +64,14 @@ public class HomeFragment extends Fragment {
         LocationServices.getFusedLocationProviderClient(getContext()).getLastLocation()
                 .addOnSuccessListener(getActivity(), location -> {
                     if (location != null) {
-                        //cuando tengamos la localizacion cogemmos el xml
+                        //Obtencion de la localizacion
                         closestStationLocation = getClosestLocation(location);
-                        //cuando tengamos la localizacion cogemmos el xml
+                        //obtenida la localizacion recogemos datos del xml
                         getXmlData();
                     }
                 });
     }
-
+    //Obtencion de datos del xml
     private void getXmlData() {
         Retrofit r = new RetrofitClient().getClient();
         APICalidadDelAireService api = r.create(APICalidadDelAireService.class);
@@ -82,18 +81,18 @@ public class HomeFragment extends Fragment {
             @Override
             public void onResponse(Call<Datos> call, Response<Datos> response) {
                 if (response.isSuccessful()) {
-                    Toast.makeText(getContext(), "Llega", Toast.LENGTH_SHORT).show();
                     Datos catalogo = response.body();
                     List<Datos.DatoHorario> lista = catalogo.getDatoHorario();
-                    //cogemos el item concreto
+                    //Cogemos el item concreto
                     List<LocalizacionEstacion> estaciones = ((MainActivity) getActivity()).localizaciones;
 
+                    //Listas con las magnitudes
                     List<Datos.DatoHorario> magnitudes1 = new ArrayList<>();
                     List<Datos.DatoHorario> magnitudes8 = new ArrayList<>();
                     List<Datos.DatoHorario> magnitudes9 = new ArrayList<>();
                     List<Datos.DatoHorario> magnitudes10 = new ArrayList<>();
 
-
+                    //Add de magnitudes a las listas
                     for (LocalizacionEstacion estacion : estaciones) {
                         Datos.DatoHorario dh = getSelectedItem(estacion.getCodigo(), "1", lista);
                         if (dh != null) {
@@ -119,6 +118,7 @@ public class HomeFragment extends Fragment {
                         }
                     }
 
+                    //String del codigo de la estacion por su localizacion
                     String codigoEstacion = getStationWithLocation();
 
                     // Cogemos el valor para esa hora y Mostramos el valor
@@ -129,7 +129,7 @@ public class HomeFragment extends Fragment {
                 } else {
                     Log.e("ERROR", String.valueOf(response.code()));
                     Toast.makeText(getContext(),
-                            "error: " + response.code(),
+                            R.string.error_vuelve + response.code(),
                             Toast.LENGTH_LONG).show();
                 }
 
@@ -138,13 +138,13 @@ public class HomeFragment extends Fragment {
             @Override
             public void onFailure(Call<Datos> call, Throwable t) {
                 Toast.makeText(getContext(),
-                        "error: " + t.getMessage(),
+                        R.string.error_vuelve + t.getMessage(),
                         Toast.LENGTH_LONG).show();
 
             }
         });
     }
-
+    //Recogida de la estacion segun localizacion
     private String getStationWithLocation() {
         String response = "";
         for (LocalizacionEstacion dh : ((MainActivity) getActivity()).localizaciones) {
@@ -156,7 +156,7 @@ public class HomeFragment extends Fragment {
 
         return response;
     }
-
+    //Recogida de la ubicacion  mas cercana
     private Location getClosestLocation(Location myLocation) {
         //Devuelve localizacion mas cercana a usuario de la lista de main activity
         //https://stackoverflow.com/a/35704721/4860142
@@ -181,7 +181,7 @@ public class HomeFragment extends Fragment {
 
         return closestLocation;
     }
-
+    //Obtenemos magnitudes de la lista de los datos horarios
     private String getMagnitud9FromEstacion(String estacion, List<Datos.DatoHorario> allItems) {
         String response = "";
         for (Datos.DatoHorario dato : allItems) {
@@ -222,7 +222,7 @@ public class HomeFragment extends Fragment {
         return response;
     }
 
-    private List<String> getAllStations(List<Datos.DatoHorario> allItems) {
+    /*private List<String> getAllStations(List<Datos.DatoHorario> allItems) {
         List<String> response = new ArrayList<>();
         for (Datos.DatoHorario dh : allItems) {
             if (!response.contains(dh.getEstacion())) {
@@ -230,19 +230,17 @@ public class HomeFragment extends Fragment {
             }
         }
         return response;
-    }
+    }*/
 
-    private List<Datos.DatoHorario> getSelectedItems(List<Datos.DatoHorario> allItems) {
+    /*private List<Datos.DatoHorario> getSelectedItems(List<Datos.DatoHorario> allItems) {
         List<Datos.DatoHorario> response = new ArrayList<>();
         for (Datos.DatoHorario dh : allItems) {
 
-    /*Dióxido de Azufre SO2
+    Magnitudes a recoger
+    Dióxido de Azufre SO2
     Dióxido de Nitrógeno NO2
     Partículas < 2.5 µm PM2.5
-    Partículas < 10 µm PM10*/
-
-    /*Date fechaAct = new Date();
-    String sFecAct = fechaAct.toString();*/
+    Partículas < 10 µm PM10
 
             if (dh.getMagnitud().equals("1") ||
                     dh.getMagnitud().equals("8") ||
@@ -252,7 +250,7 @@ public class HomeFragment extends Fragment {
             }
         }
         return response;
-    }
+    }*/
 
     private Datos.DatoHorario getSelectedItem(String estacion, String magnitud, List<Datos.DatoHorario> allItems) {
         Datos.DatoHorario response = new Datos.DatoHorario();
