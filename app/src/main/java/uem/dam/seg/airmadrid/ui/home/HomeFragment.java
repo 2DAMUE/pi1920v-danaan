@@ -44,6 +44,8 @@ public class HomeFragment extends Fragment {
     private TextView tvSuma;
     Location closestStationLocation;
 
+    private TextView tvLocalizacion;
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel =
@@ -55,6 +57,7 @@ public class HomeFragment extends Fragment {
         tvSO2 = root.findViewById(R.id.tvValorSO2);
         tvNO2 = root.findViewById(R.id.tvValorNO2);
         tvSuma = root.findViewById(R.id.tvCifraGlobalH);
+        tvLocalizacion = root.findViewById(R.id.tvLocalizacionH);
 
         return root;
     }
@@ -122,6 +125,11 @@ public class HomeFragment extends Fragment {
 
                     //String del codigo de la estacion por su localizacion
                     String codigoEstacion = getStationWithLocation();
+
+                    //String del nombre de la estacion con su localizacion
+                    String nombreEstacion = getNameStationWithLocation().toUpperCase();
+                    //Asignamos el nombre de la estación en su TextView
+                    tvLocalizacion.setText(nombreEstacion);
 
                     // Cogemos el valor para esa hora y Mostramos el valor
 
@@ -192,6 +200,22 @@ public class HomeFragment extends Fragment {
 
         return response;
     }
+
+    //Recogida de la estacion segun localizacion
+    private String getNameStationWithLocation() {
+        String response = "";
+        for (LocalizacionEstacion dh : ((MainActivity) getActivity()).localizaciones) {
+            if (dh.getLocalizacion().latitude == closestStationLocation.getLatitude() &&
+                    dh.getLocalizacion().longitude == closestStationLocation.getLongitude()) {
+                response = dh.getNombre();
+            }
+        }
+
+        return response;
+    }
+
+
+
     //Recogida de la ubicacion  mas cercana
     private Location getClosestLocation(Location myLocation) {
         //Devuelve localizacion mas cercana a usuario de la lista de main activity
