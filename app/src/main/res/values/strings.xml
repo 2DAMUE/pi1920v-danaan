@@ -74,5 +74,5 @@ I want to inform users of this Service that these third parties have access to y
     <string name="info_NO2">Información sobre el NO2</string>
     <string name="error_vuelve">Ooops! Vuelve a intentarlo</string>
     <string name="tv_escenario_h">Ver escenarios</string>
-    <string name="dato_no_recogido">Dato no recogido</string>
+    <string name="dato_no_recogido">-</string>
 </resources>
