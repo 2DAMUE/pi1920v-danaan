@@ -30,6 +30,6 @@
     <fragment
         android:id="@+id/navigation_ajustes"
         android:name="uem.dam.seg.airmadrid.ui.ajustes.AjustesFragment"
-        android:label="@string/title_ajustes"
+        android:label="@string/title_privacy"
         tools:layout="@layout/fragment_ajustes" />
 </navigation>

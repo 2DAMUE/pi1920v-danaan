@@ -17,10 +17,10 @@
     <string name="msj_no_accede">Error de acceso</string>
     <string name="title_activity_maps">Map</string>
     <string name="title_chat">Chat</string>
-    <string name="title_mapa">Mapa</string>
+    <string name="title_mapa">Map</string>
     <string name="title_home">Home</string>
-    <string name="title_redes">Redes</string>
-    <string name="title_ajustes">Ajustes</string>
+    <string name="title_redes">Twitter</string>
+    <string name="title_privacy">Privacy</string>
     <string name="tv_politica_privada">Built the [AIR MADRID] app as a Free app. This SERVICE is provided by at no cost and is intended for use as is.
 \nThis page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.
  \nIf you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.
