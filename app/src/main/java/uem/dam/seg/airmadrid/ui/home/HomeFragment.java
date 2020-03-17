@@ -140,6 +140,7 @@ public class HomeFragment extends Fragment {
                         iTvPM25 = Integer.parseInt(tvPM25.getText().toString());
                     }catch (NumberFormatException excepcion){
                         iTvPM25 = 0;
+                        tvPM25.setText(R.string.dato_no_recogido); // Hay estaciones que no recogen todos los datos
                     }
 
                     tvPM10.setText(getMagnitud8FromEstacion(codigoEstacion, magnitudes8));
@@ -148,6 +149,7 @@ public class HomeFragment extends Fragment {
                         iTvPM10 = Integer.parseInt(tvPM10.getText().toString());
                     }catch(NumberFormatException excepcion){
                         iTvPM10 = 0;
+                        tvPM10.setText(R.string.dato_no_recogido);
                     }
 
                     tvSO2.setText(getMagnitud1FromEstacion(codigoEstacion, magnitudes1));
@@ -156,6 +158,7 @@ public class HomeFragment extends Fragment {
                         iTvSO2 = Integer.parseInt(tvSO2.getText().toString());
                     }catch(NumberFormatException excepcion){
                         iTvSO2 = 0;
+                        tvSO2.setText(R.string.dato_no_recogido);
                     }
 
                     tvNO2.setText(getMagnitud10FromEstacion(codigoEstacion, magnitudes10));
@@ -164,6 +167,7 @@ public class HomeFragment extends Fragment {
                         iTvNO2 = Integer.parseInt(tvNO2.getText().toString());
                     }catch(NumberFormatException excepcion){
                         iTvNO2 = 0;
+                        tvNO2.setText(R.string.dato_no_recogido);
                     }
 
                     //Ponderacion de contaminantes
