@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void escenarios(View view) {
-        Uri url = Uri.parse("https://developer.android.com/guide/components/intents-filters.html");
+        Uri url = Uri.parse("https://puedocircular.com/#/");
         Intent navegar = new Intent(Intent.ACTION_VIEW, url);
         if (navegar.resolveActivity(getPackageManager()) != null) {
             startActivity(navegar);
