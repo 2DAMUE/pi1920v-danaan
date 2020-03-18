@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="50dp"
         android:textColor="@color/skyBlue"/>
 
     <LinearLayout
@@ -24,7 +24,7 @@
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvLogin">
@@ -80,7 +80,7 @@
         android:id="@+id/btnEntrar"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="80dp"
         android:text="@string/btn_entrar"
         android:textColor="@color/white"
         android:background="@drawable/botones"
@@ -93,13 +93,13 @@
         android:id="@+id/tvLoginCC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="crearCuenta"
         android:text="@string/tv_login_cc"
         android:textColor="@color/mediumGrey"
         android:textStyle="bold"
-        android:layout_marginTop="70dp"
-        android:onClick="crearCuenta"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnEntrar"/>
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

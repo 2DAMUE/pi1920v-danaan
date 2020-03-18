@@ -17,14 +17,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="70dp"/>
+        android:layout_marginTop="50dp"/>
 
     <LinearLayout
         android:id="@+id/llRegistro"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvRegistro">
@@ -70,7 +70,7 @@
         android:id="@+id/btnCrearCuenta"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="50dp"
         android:text="@string/tv_registro"
         android:textColor="@color/white"
         android:background="@drawable/botones"
@@ -83,13 +83,15 @@
         android:id="@+id/tvIniSesion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tv_ini_sesion"
         android:layout_marginTop="60dp"
         android:onClick="iniciarSesion"
+        android:text="@string/tv_ini_sesion"
+        android:textColor="@color/mediumGrey"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnCrearCuenta"
-        android:textStyle="bold"
-        android:textColor="@color/mediumGrey"/>
+        android:layout_marginBottom="50dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
