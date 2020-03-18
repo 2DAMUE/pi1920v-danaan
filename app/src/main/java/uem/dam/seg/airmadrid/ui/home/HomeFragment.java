@@ -236,7 +236,7 @@ public class HomeFragment extends Fragment {
                         ipMax = ipO3;
                     }
 
-                    tvSuma.setText(String.format("%s", ipMax));
+                    tvSuma.setText(Integer.toString((int)ipMax));
 
 
                     /*//Ponderacion de contaminantes
