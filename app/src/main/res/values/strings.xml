@@ -65,9 +65,45 @@ I want to inform users of this Service that these third parties have access to y
     <string name="tv_recomendaciones">Recomendaciones de salud</string>
     <string name="tv_protocolos">Protocolos activos</string>
     <string name="titulo_info_PM25">Información sobre el PM25</string>
-    <string name="info_PM25">Información sobre el PM25</string>
+    <string name="info_PM25"><b>¿Que es PM2.5?</b>
+\nMP2.5 es material particulado flotando en el aire que mide 2,5 micrometros de diámetro o menos.
+\nDebido a su pequeño tamaño, MP2.5 tiene la capacidad de ser absorbido por la sangre después de ser inhalado. Es por esta razón que normalmente es el contaminante que presenta la mayor amenaza para la salud.
+        \n<b>¿Que donde viene?</b>
+\nEl material particulado es emitido, ya sea directamente desde fuentes artificiales o naturales, o generadas por reacciones de otros contaminantes con la atmósfera. Las fuentes incluyen la combustión (motor, plantas de energía, quema de leña, etc…), los procesos industriales y las reacciones químicas que se producen entre gases tales como el dióxido de azufre, los óxidos de nitrógeno y los compuestos orgánicos volatiles.
+        \n<b>¿Como afecta a nuestra salud?</b>
+\nEfectos a corto plazo:
+- Irritacion de los ojos, garganta y nariz
+\n- Arritmia
+\n- Crisis asmáticas
+\n- Tos, presión en el pecho y dificultad para respirar
+\nEfectos a largo plazo:
+- Enfermedades respiratorias como bronquitis, asma y enfisema
+\n- Enfermedades del tejido pulmonar
+\n- Cancer
+\n- Ataque al corazón
+\n- Ictus
+\n- Muerte prematura</string>
     <string name="titulo_info_PM10">Información sobre el PM10</string>
-    <string name="info_PM10">Información sobre el PM10</string>
+    <string name="info_PM10"><b>¿Que es MP10?</b>
+\nEl MP10 es material particulado en suspension, ya sea solido o liquido, con un diámetro de 10 micrómetros o menos. La diferencia entre MP10 y MP2.5 es solo una cuestión de tamaño. MP2,5 es muy fino y MP10 es más grande y más grueso.
+        \n<b>¿De donde viene?</b>
+\n- Polvo de la construcción, los vertederos y la agricultura
+\n- Polvo del campo abierto
+\n- Humo de incendios forestales y la quema de residuos
+\n- Reacciones químicas de la industria
+\n- Automóviles
+        \n<b>¿Como afecta a nuestra salud?</b>
+\nEfectos a corto plazo:
+- Dificultad respiratoria
+\n- Dolor torácico
+\n- Malestar general al respirar
+\n- Dolor de garganta
+\n- Congestion nasal
+\nEfectos a largo plazo:
+- Enfermedades del tejido pulmonar
+\n -Cancer
+\n- Asma
+\n- Muerte prematura</string>
     <string name="titulo_info_SO2">Información sobre el SO2</string>
     <string name="info_SO2">Información sobre el SO2</string>
     <string name="titulo_info_NO2">Información sobre el NO2</string>
