@@ -5,25 +5,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/skyBlue"/>
+
     <TextView
         android:id="@+id/tvPoliticaPrivadaTitulo"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="@color/skyBlue"
+        android:layout_height="wrap_content"
         android:text="@string/tv_politica_privada_titulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:paddingLeft="@dimen/padding"/>
+
 
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvPoliticaPrivadaTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/view"
         tools:layout_editor_absoluteX="16dp"
         android:padding="@dimen/padding">
 

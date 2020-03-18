@@ -84,7 +84,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/tv_pm25"
                 android:layout_weight="1"
-                android:layout_marginLeft="5dp"/>
+                android:layout_marginLeft="5dp"
+                android:onClick="infoPM25"/>
 
             <ImageView
                 android:layout_width="12dp"
@@ -98,7 +99,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/tv_pm10"
                 android:layout_weight="1"
-                android:layout_marginLeft="5dp"/>
+                android:layout_marginLeft="5dp"
+                android:onClick="infoPM10"/>
 
         </LinearLayout>
 
@@ -147,7 +149,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/tv_so2"
                 android:layout_weight="1"
-                android:layout_marginLeft="5dp"/>
+                android:layout_marginLeft="5dp"
+                android:onClick="infoSO2"/>
 
             <ImageView
                 android:layout_width="12dp"
@@ -163,7 +166,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/tv_no2"
                 android:layout_weight="1"
-                android:layout_marginLeft="5dp"/>
+                android:layout_marginLeft="5dp"
+                android:onClick="infoNO2"/>
         </LinearLayout>
 
         <LinearLayout
@@ -190,16 +194,12 @@
 
         </LinearLayout>
 
-
-
-
         <ImageView
             android:id="@+id/ivSeparador2"
             android:layout_width="match_parent"
             android:layout_height="8dp"
             android:background="@color/lighterGrey"
             android:layout_marginTop="16dp"/>
-
 
         <TextView
             android:layout_width="wrap_content"
