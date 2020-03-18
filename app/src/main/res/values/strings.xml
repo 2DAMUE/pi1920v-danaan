@@ -90,4 +90,5 @@ I want to inform users of this Service that these third parties have access to y
     <string name="aire_verde">No es necesario el uso de purificadores de aire</string>
     <string name="aire_naranja">Se aconseja usar purificador de aire para grupos sensibles</string>
     <string name="aire_rojo">Use purificador de aire</string>
+    <string name="msj_recomendaciones">Pulse los iconos para más información sobre las recomendaciones</string>
 </resources>

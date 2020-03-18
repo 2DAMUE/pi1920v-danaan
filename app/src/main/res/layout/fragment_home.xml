@@ -257,6 +257,8 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:text="@string/msj_recomendaciones"
+            android:background="@drawable/border_images"
             android:padding="8dp"
             android:textSize="12sp"/>
 
