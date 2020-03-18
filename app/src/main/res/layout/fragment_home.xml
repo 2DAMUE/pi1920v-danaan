@@ -2,13 +2,14 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/scrim_gradient">
+    android:layout_height="wrap_content">
 
     <LinearLayout
+        android:id="@+id/contenedor"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="@drawable/scrim_gradient"
         android:gravity="center">
 
        <TextView
@@ -39,7 +40,6 @@
             android:id="@+id/tvGradoH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tv_grado_h"
             android:textSize="12sp"/>
 
         <ImageView
@@ -216,8 +216,8 @@
 
             <ImageView
                 android:id="@+id/iwRecomendacion1"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/ventana_negro"
                 android:layout_margin="10dp"
                 android:background="@drawable/border_images"
@@ -225,8 +225,8 @@
 
             <ImageView
                 android:id="@+id/iwRecomendacion2"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/bici_negro"
                 android:layout_margin="10dp"
                 android:background="@drawable/border_images"
@@ -234,8 +234,8 @@
 
             <ImageView
                 android:id="@+id/iwRecomendacion3"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/mascarilla_negro"
                 android:layout_margin="10dp"
                 android:background="@drawable/border_images"
@@ -243,8 +243,8 @@
 
             <ImageView
                 android:id="@+id/iwRecomendacion4"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/aire_negro"
                 android:layout_margin="10dp"
                 android:background="@drawable/border_images"
@@ -253,10 +253,10 @@
         </LinearLayout>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/mensajeRecomendaciones"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="sdfsdfsdfsdfsdfsfd"
-            android:background="@drawable/border"
+            android:gravity="center"
             android:padding="8dp"
             android:textSize="12sp"/>
 

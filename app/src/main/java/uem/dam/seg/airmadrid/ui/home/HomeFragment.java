@@ -7,6 +7,9 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -44,6 +47,14 @@ public class HomeFragment extends Fragment {
     private TextView tvSuma;
     Location closestStationLocation;
 
+    private LinearLayout contenedor;
+    private TextView tvGradoAlerta;
+    private ImageView iwVentana;
+    private ImageView iwBici;
+    private ImageView iwMascarilla;
+    private ImageView iwAire;
+    private TextView msjRecomendaciones;
+
     private TextView tvLocalizacion;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -58,6 +69,13 @@ public class HomeFragment extends Fragment {
         tvNO2 = root.findViewById(R.id.tvValorNO2);
         tvSuma = root.findViewById(R.id.tvCifraGlobalH);
         tvLocalizacion = root.findViewById(R.id.tvLocalizacionH);
+        contenedor = root.findViewById(R.id.contenedor);
+        tvGradoAlerta = root.findViewById(R.id.tvGradoH);
+        iwVentana = root.findViewById(R.id.iwRecomendacion1);
+        iwBici = root.findViewById(R.id.iwRecomendacion2);
+        iwMascarilla = root.findViewById(R.id.iwRecomendacion3);
+        iwAire = root.findViewById(R.id.iwRecomendacion4);
+        msjRecomendaciones = root.findViewById(R.id.mensajeRecomendaciones);
 
         return root;
     }
@@ -213,8 +231,6 @@ public class HomeFragment extends Fragment {
                         O3 = 0;
                     }
 
-
-
                     double ipMax = 0;
 
                     if (iTvPM25 > ipMax){
@@ -236,8 +252,192 @@ public class HomeFragment extends Fragment {
                         ipMax = ipO3;
                     }
 
-                    tvSuma.setText(Integer.toString((int)ipMax));
+                    int numIpMax = (int) ipMax;
 
+                    tvSuma.setText(Integer.toString(numIpMax));
+
+                    // cambio del color del fondo dependiendo de los valores
+                    if (numIpMax >= 0 && numIpMax <= 50) {
+                        contenedor.setBackground(getResources().getDrawable(R.drawable.scrim_gradient_green));
+                        tvGradoAlerta.setText(R.string.grado_buena);
+
+                        iwVentana.setImageResource(R.drawable.ventana_verde);
+                        iwVentana.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                msjRecomendaciones.setBackground(getResources().getDrawable(R.drawable.border_verde));
+                                msjRecomendaciones.setText(R.string.ventana_verde);
+                                iwVentana.setBackground(getResources().getDrawable(R.drawable.border_verde));
+
+                                // para que al pulsar a en otro icono, se quite el color del borde
+                                iwBici.setBackground(getResources().getDrawable(R.drawable.border_images));
+                                iwMascarilla.setBackground(getResources().getDrawable(R.drawable.border_images));
+                                iwAire.setBackground(getResources().getDrawable(R.drawable.border_images));
+                            }
+                        });
+
+                        iwBici.setImageResource(R.drawable.bici_verde);
+                        iwBici.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                msjRecomendaciones.setBackground(getResources().getDrawable(R.drawable.border_verde));
+                                msjRecomendaciones.setText(R.string.bici_verde);
+                                iwBici.setBackground(getResources().getDrawable(R.drawable.border_verde));
+
+                                iwVentana.setBackground(getResources().getDrawable(R.drawable.border_images));
+                                iwMascarilla.setBackground(getResources().getDrawable(R.drawable.border_images));
+                                iwAire.setBackground(getResources().getDrawable(R.drawable.border_images));
+                            }
+                        });
+
+                        iwMascarilla.setImageResource(R.drawable.mascarilla_verde);
+                        iwMascarilla.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                msjRecomendaciones.setBackground(getResources().getDrawable(R.drawable.border_verde));
+                                msjRecomendaciones.setText(R.string.mascarilla_verde);
+                                iwMascarilla.setBackground(getResources().getDrawable(R.drawable.border_verde));
+
+                                iwVentana.setBackground(getResources().getDrawable(R.drawable.border_images));
+                                iwBici.setBackground(getResources().getDrawable(R.drawable.border_images));
+                                iwAire.setBackground(getResources().getDrawable(R.drawable.border_images));
+                            }
+                        });
+
+                        iwAire.setImageResource(R.drawable.aire_verde);
+                        iwAire.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                msjRecomendaciones.setBackground(getResources().getDrawable(R.drawable.border_verde));
+                                msjRecomendaciones.setText(R.string.aire_verde);
+                                iwAire.setBackground(getResources().getDrawable(R.drawable.border_verde));
+
+                                iwVentana.setBackground(getResources().getDrawable(R.drawable.border_images));
+                                iwBici.setBackground(getResources().getDrawable(R.drawable.border_images));
+                                iwMascarilla.setBackground(getResources().getDrawable(R.drawable.border_images));
+                            }
+                        });
+
+                    } else if (numIpMax >= 51 && numIpMax <= 100) {
+                        contenedor.setBackground(getResources().getDrawable(R.drawable.scrim_gradient_orange));
+                        tvGradoAlerta.setText(R.string.grado_moderada);
+
+                        iwVentana.setImageResource(R.drawable.ventana_naranja);
+                        iwVentana.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                msjRecomendaciones.setBackground(getResources().getDrawable(R.drawable.border_naranja));
+                                msjRecomendaciones.setText(R.string.ventana_naranja);
+                                iwVentana.setBackground(getResources().getDrawable(R.drawable.border_naranja));
+
+                                iwBici.setBackground(getResources().getDrawable(R.drawable.border_images));
+                                iwMascarilla.setBackground(getResources().getDrawable(R.drawable.border_images));
+                                iwAire.setBackground(getResources().getDrawable(R.drawable.border_images));
+                            }
+                        });
+
+                        iwBici.setImageResource(R.drawable.bici_naranja);
+                        iwBici.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                msjRecomendaciones.setBackground(getResources().getDrawable(R.drawable.border_naranja));
+                                msjRecomendaciones.setText(R.string.bici_naranja);
+                                iwBici.setBackground(getResources().getDrawable(R.drawable.border_naranja));
+
+                                iwVentana.setBackground(getResources().getDrawable(R.drawable.border_images));
+                                iwMascarilla.setBackground(getResources().getDrawable(R.drawable.border_images));
+                                iwAire.setBackground(getResources().getDrawable(R.drawable.border_images));
+                            }
+                        });
+
+                        iwMascarilla.setImageResource(R.drawable.mascarilla_naranja);
+                        iwMascarilla.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                msjRecomendaciones.setBackground(getResources().getDrawable(R.drawable.border_naranja));
+                                msjRecomendaciones.setText(R.string.mascarilla_naranja);
+                                iwMascarilla.setBackground(getResources().getDrawable(R.drawable.border_naranja));
+
+                                iwVentana.setBackground(getResources().getDrawable(R.drawable.border_images));
+                                iwBici.setBackground(getResources().getDrawable(R.drawable.border_images));
+                                iwAire.setBackground(getResources().getDrawable(R.drawable.border_images));
+                            }
+                        });
+
+                        iwAire.setImageResource(R.drawable.aire_naranja);
+                        iwAire.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                msjRecomendaciones.setBackground(getResources().getDrawable(R.drawable.border_naranja));
+                                msjRecomendaciones.setText(R.string.aire_naranja);
+                                iwAire.setBackground(getResources().getDrawable(R.drawable.border_naranja));
+
+                                iwVentana.setBackground(getResources().getDrawable(R.drawable.border_images));
+                                iwBici.setBackground(getResources().getDrawable(R.drawable.border_images));
+                                iwMascarilla.setBackground(getResources().getDrawable(R.drawable.border_images));
+                            }
+                        });
+
+                    } else {
+                        contenedor.setBackground(getResources().getDrawable(R.drawable.scrim_gradient_red));
+                        tvGradoAlerta.setText(R.string.grado_mala);
+
+                        iwVentana.setImageResource(R.drawable.ventana_roja);
+                        iwVentana.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                msjRecomendaciones.setBackground(getResources().getDrawable(R.drawable.border_rojo));
+                                msjRecomendaciones.setText(R.string.ventana_roja);
+                                iwVentana.setBackground(getResources().getDrawable(R.drawable.border_rojo));
+
+                                iwBici.setBackground(getResources().getDrawable(R.drawable.border_images));
+                                iwMascarilla.setBackground(getResources().getDrawable(R.drawable.border_images));
+                                iwAire.setBackground(getResources().getDrawable(R.drawable.border_images));
+                            }
+                        });
+
+                        iwBici.setImageResource(R.drawable.bici_roja);
+                        iwBici.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                msjRecomendaciones.setBackground(getResources().getDrawable(R.drawable.border_rojo));
+                                msjRecomendaciones.setText(R.string.bici_roja);
+                                iwBici.setBackground(getResources().getDrawable(R.drawable.border_rojo));
+
+                                iwVentana.setBackground(getResources().getDrawable(R.drawable.border_images));
+                                iwMascarilla.setBackground(getResources().getDrawable(R.drawable.border_images));
+                                iwAire.setBackground(getResources().getDrawable(R.drawable.border_images));
+                            }
+                        });
+
+                        iwMascarilla.setImageResource(R.drawable.mascarilla_roja);
+                        iwMascarilla.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                msjRecomendaciones.setBackground(getResources().getDrawable(R.drawable.border_rojo));
+                                msjRecomendaciones.setText(R.string.mascarilla_roja);
+                                iwMascarilla.setBackground(getResources().getDrawable(R.drawable.border_rojo));
+
+                                iwVentana.setBackground(getResources().getDrawable(R.drawable.border_images));
+                                iwBici.setBackground(getResources().getDrawable(R.drawable.border_images));
+                                iwAire.setBackground(getResources().getDrawable(R.drawable.border_images));
+                            }
+                        });
+
+                        iwAire.setImageResource(R.drawable.aire_rojo);
+                        iwAire.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                msjRecomendaciones.setBackground(getResources().getDrawable(R.drawable.border_rojo));
+                                msjRecomendaciones.setText(R.string.aire_rojo);
+                                iwAire.setBackground(getResources().getDrawable(R.drawable.border_rojo));
+
+                                iwVentana.setBackground(getResources().getDrawable(R.drawable.border_images));
+                                iwBici.setBackground(getResources().getDrawable(R.drawable.border_images));
+                                iwMascarilla.setBackground(getResources().getDrawable(R.drawable.border_images));
+                            }
+                        });
+                    }
 
                     /*//Ponderacion de contaminantes
                     int suma = iTvNO2 + iTvSO2 + iTvPM10 + iTvPM25 + CO + O3;

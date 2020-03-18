@@ -75,4 +75,19 @@ I want to inform users of this Service that these third parties have access to y
     <string name="error_vuelve">Ooops! Vuelve a intentarlo</string>
     <string name="tv_escenario_h">Ver escenarios</string>
     <string name="dato_no_recogido">-</string>
+    <string name="grado_buena">BUENA</string>
+    <string name="grado_moderada">MODERADA</string>
+    <string name="grado_mala">MALA</string>
+    <string name="ventana_verde">Abre las ventanas para que el aire fresco y limpio pase al interior</string>
+    <string name="ventana_naranja">Evite ventilar la casa en las horas puntas de su ciudad</string>
+    <string name="ventana_roja">Cierre sus ventanas para evitar el aire sucio de fuera</string>
+    <string name="bici_verde">Disfrute actividades al aire libre</string>
+    <string name="bici_naranja">Los grupos sensibles deben reducir el ejercicio en el exterior</string>
+    <string name="bici_roja">Evite realizar ejercicios al aire libre</string>
+    <string name="mascarilla_verde">No es necesario el uso de mascarillas en el exterior</string>
+    <string name="mascarilla_naranja">Los grupos sensibles deben llevar mascarilla en el exterior</string>
+    <string name="mascarilla_roja">Se aconseja el uso de mascarilla en el exterior</string>
+    <string name="aire_verde">No es necesario el uso de purificadores de aire</string>
+    <string name="aire_naranja">Se aconseja usar purificador de aire para grupos sensibles</string>
+    <string name="aire_rojo">Use purificador de aire</string>
 </resources>
