@@ -80,14 +80,14 @@
         android:id="@+id/btnEntrar"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:text="@string/btn_entrar"
-        android:textColor="@color/white"
         android:background="@drawable/botones"
         android:onClick="entrar"
+        android:text="@string/btn_entrar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/tvLoginCC"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvOlvido" />
+        android:layout_marginBottom="50dp"/>
 
     <TextView
         android:id="@+id/tvLoginCC"
@@ -100,6 +100,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnEntrar" />
+        android:layout_marginBottom="25dp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
