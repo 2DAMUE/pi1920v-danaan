@@ -211,21 +211,21 @@ public class HomeFragment extends Fragment {
                     }
 
 
-                    String SCO = getMagnitud6FromEstacion(codigoEstacion, magnitudes6).toString();
-                    int CO;
+                    String sCO = getMagnitud6FromEstacion(codigoEstacion, magnitudes6).toString();
+                    double CO;
                     double ipCO = 0;
                     try{
-                        CO = Integer.parseInt(SCO);
+                        CO = Double.parseDouble(sCO);
                         ipCO = CO * 10;
                     }catch(NumberFormatException excepcion){
                         CO = 0;
                     }
 
-                    String SO3 = getMagnitud14FromEstacion(codigoEstacion, magnitudes14).toString();
+                    String sO3 = getMagnitud14FromEstacion(codigoEstacion, magnitudes14).toString();
                     int O3;
                     double ipO3 = 0;
                     try{
-                        O3 = Integer.parseInt(SO3);
+                        O3 = Integer.parseInt(sO3);
                         ipO3 = O3 * 0.556;
                     }catch(NumberFormatException excepcion){
                         O3 = 0;

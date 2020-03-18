@@ -1,5 +1,6 @@
 package uem.dam.seg.airmadrid;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -65,7 +66,13 @@ public class MainActivity extends AppCompatActivity {
     public void infoPM25(View view) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(R.string.titulo_info_PM25);
-        builder.setMessage(R.string.titulo_info_PM25);
+        builder.setMessage(R.string.info_PM25);
+        builder.setPositiveButton(R.string.cerrar, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
 
         AlertDialog dialog = builder.create();
         dialog.show();
@@ -74,7 +81,13 @@ public class MainActivity extends AppCompatActivity {
     public void infoPM10(View view) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(R.string.titulo_info_PM10);
-        builder.setMessage(R.string.titulo_info_PM10);
+        builder.setMessage(R.string.info_PM10);
+        builder.setPositiveButton(R.string.cerrar, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
 
         AlertDialog dialog = builder.create();
         dialog.show();
@@ -83,7 +96,13 @@ public class MainActivity extends AppCompatActivity {
     public void infoSO2(View view) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(R.string.titulo_info_SO2);
-        builder.setMessage(R.string.titulo_info_SO2);
+        builder.setMessage(R.string.info_SO2);
+        builder.setPositiveButton(R.string.cerrar, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
 
         AlertDialog dialog = builder.create();
         dialog.show();
@@ -92,7 +111,13 @@ public class MainActivity extends AppCompatActivity {
     public void infoNO2(View view) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(R.string.titulo_info_NO2);
-        builder.setMessage(R.string.titulo_info_NO2);
+        builder.setMessage(R.string.info_NO2);
+        builder.setPositiveButton(R.string.cerrar, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
 
         AlertDialog dialog = builder.create();
         dialog.show();

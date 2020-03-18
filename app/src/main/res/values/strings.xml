@@ -68,16 +68,16 @@ I want to inform users of this Service that these third parties have access to y
     <string name="info_PM25"><b>¿Que es PM2.5?</b>
 \nMP2.5 es material particulado flotando en el aire que mide 2,5 micrometros de diámetro o menos.
 \nDebido a su pequeño tamaño, MP2.5 tiene la capacidad de ser absorbido por la sangre después de ser inhalado. Es por esta razón que normalmente es el contaminante que presenta la mayor amenaza para la salud.
-        \n<b>¿Que donde viene?</b>
+        \n\n<b>¿Que donde viene?</b>
 \nEl material particulado es emitido, ya sea directamente desde fuentes artificiales o naturales, o generadas por reacciones de otros contaminantes con la atmósfera. Las fuentes incluyen la combustión (motor, plantas de energía, quema de leña, etc…), los procesos industriales y las reacciones químicas que se producen entre gases tales como el dióxido de azufre, los óxidos de nitrógeno y los compuestos orgánicos volatiles.
-        \n<b>¿Como afecta a nuestra salud?</b>
-\nEfectos a corto plazo:
-- Irritacion de los ojos, garganta y nariz
+        \n\n<b>¿Como afecta a nuestra salud?</b>
+\n\nEfectos a corto plazo:
+\n- Irritacion de los ojos, garganta y nariz
 \n- Arritmia
 \n- Crisis asmáticas
 \n- Tos, presión en el pecho y dificultad para respirar
-\nEfectos a largo plazo:
-- Enfermedades respiratorias como bronquitis, asma y enfisema
+\n\nEfectos a largo plazo:
+\n- Enfermedades respiratorias como bronquitis, asma y enfisema
 \n- Enfermedades del tejido pulmonar
 \n- Cancer
 \n- Ataque al corazón
@@ -86,28 +86,53 @@ I want to inform users of this Service that these third parties have access to y
     <string name="titulo_info_PM10">Información sobre el PM10</string>
     <string name="info_PM10"><b>¿Que es MP10?</b>
 \nEl MP10 es material particulado en suspension, ya sea solido o liquido, con un diámetro de 10 micrómetros o menos. La diferencia entre MP10 y MP2.5 es solo una cuestión de tamaño. MP2,5 es muy fino y MP10 es más grande y más grueso.
-        \n<b>¿De donde viene?</b>
+        \n\n<b>¿De donde viene?</b>
 \n- Polvo de la construcción, los vertederos y la agricultura
 \n- Polvo del campo abierto
 \n- Humo de incendios forestales y la quema de residuos
 \n- Reacciones químicas de la industria
 \n- Automóviles
-        \n<b>¿Como afecta a nuestra salud?</b>
-\nEfectos a corto plazo:
-- Dificultad respiratoria
+        \n\n<b>¿Como afecta a nuestra salud?</b>
+\n\nEfectos a corto plazo:
+\n- Dificultad respiratoria
 \n- Dolor torácico
 \n- Malestar general al respirar
 \n- Dolor de garganta
 \n- Congestion nasal
-\nEfectos a largo plazo:
-- Enfermedades del tejido pulmonar
+\n\nEfectos a largo plazo:
+\n- Enfermedades del tejido pulmonar
 \n -Cancer
 \n- Asma
 \n- Muerte prematura</string>
     <string name="titulo_info_SO2">Información sobre el SO2</string>
-    <string name="info_SO2">Información sobre el SO2</string>
+    <string name="info_SO2"><b>¿Que es el dióxido de azufre?</b>
+\nEl dióxido de azufre (SO2) es un gas incoloro. Pertenece a un grupo de gases altamente reactivos, conocidos como “óxidos de azufre”. Reaccionan fácilmente entre ellos, para formar una serie de compuestos nocivos, tales como ácido sulfúrico, ácido sulfuroso, y partículas de sulfato
+        \n\n<b>¿De donde viene?</b>
+\n- Actividades industriales que utilizan materiales con sulfuro para generar electricidad
+\n- Automoviles, a consecuencia de la combustion de la gasolina
+        \n\n<b>¿Como afectan a nuestra salud?</b>
+\nEfectos a corto plazo:
+\n- Sibilancias
+\n- Presión en el pecho
+\n- Dificultad para respirar
+\nEfectos a largo plazo:
+\n- Enfermedades respiratorias
+\n- Alteracion de las defensas de los pulmones
+\n- Mayor riesgo de enfermedad cardiovascular</string>
     <string name="titulo_info_NO2">Información sobre el NO2</string>
-    <string name="info_NO2">Información sobre el NO2</string>
+    <string name="info_NO2">\n<b>¿Que es el dióxido de nitrógeno (NO2)?</b>
+\nEl dióxido de nitrógeno (NO2) es un contribuyente significativo a la formación de smog y un precursor de muchos contaminantes secundarios dañinos, incluyendo ozono y material particular.
+        \n\n<b>¿De donde viene?</b>
+\nEl dióxido de nitrógeno puede tener sus orígenes en fuentes tanto orgánicas como inorgánicas.
+\nLas fuentes orgánicas tales como relámpagos, plantas, agua y suelo, solo representan el 1% del dióxido de nitrógeno que se encuentra en las ciudades. El otro 99% proviene de fuentes inorgánicas como las emisiones de automóviles, calentadores de gas sin filtro, cocinas y diversas actividades industriales
+\n\n<b>¿Como afecta a nuestra salud?</b>
+\nEfectos a corto plazo:
+\n- Irritación pulmonar
+\n- Menor resistencia a las infecciones respiratorias
+\n\nEfectos a largo plazo:
+\n- Asma y mayor riesgo de experimentar crisis asmáticas mas frecuentes e intensas
+\n- Enfermedades de tejido pulmonar
+\n- Muerte prematura</string>
     <string name="error_vuelve">Ooops! Vuelve a intentarlo</string>
     <string name="tv_escenario_h">Ver escenarios</string>
     <string name="dato_no_recogido">-</string>
@@ -127,4 +152,5 @@ I want to inform users of this Service that these third parties have access to y
     <string name="aire_naranja">Se aconseja usar purificador de aire para grupos sensibles</string>
     <string name="aire_rojo">Use purificador de aire</string>
     <string name="msj_recomendaciones">Pulse los iconos para más información sobre las recomendaciones</string>
+    <string name="cerrar">Cerrar</string>
 </resources>
