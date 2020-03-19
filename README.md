@@ -11,7 +11,7 @@ Created by: Andrea Muñoz, Daniel Alonso, Ignacio López
 - [Twitter](#twitter)
 - [Politica de privacidad](#politica-de-privacidad)
 
-
+<br/><br/>
 ## INTRO
 
 
@@ -19,7 +19,7 @@ Created by: Andrea Muñoz, Daniel Alonso, Ignacio López
 
 
 
-
+<br/><br/>
 ## SPLASH
 
 La aplicación se lanza con un splash animado, en el cual, la “i” de Air está representada por un molino de viento con sus hélices en movimiento.
@@ -28,7 +28,7 @@ La aplicación se lanza con un splash animado, en el cual, la “i” de Air est
 
 
 
-
+<br/><br/>
 ## LOGIN & REGISTRO
 
 A continuación pasaremos a la pantalla de login con el que podrás acceder a la aplicación con tu email y con tu contraseña.
@@ -39,7 +39,7 @@ En el caso de que no estés registrado, con el botón de **crear cuenta** accede
 
 
 
-
+<br/><br/>
 ## HOME
 
 Tras logearnos con éxito y entrar en la aplicación se nos abrirá la pantalla del HOME.
@@ -67,7 +67,7 @@ Haciendo click en los contaminantes se abrirá un alertDialog que proporcionará
 
 
 
-
+<br/><br/>
 ## DIALOGFLOW
 
 Podemos consultar informacion sobre los gases (**PM2.5, PM10, SO2, NO2, CO2**)...<br/>
@@ -83,7 +83,7 @@ Podemos consultar informacion sobre los gases (**PM2.5, PM10, SO2, NO2, CO2**)..
 
 
 
-
+<br/><br/>
 ## MAPA
 
 ![Mapa](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/mapa.png)
@@ -91,7 +91,7 @@ Podemos consultar informacion sobre los gases (**PM2.5, PM10, SO2, NO2, CO2**)..
 
 
 
-
+<br/><br/>
 ## TWITTER
 
 ![Twitter](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/twitter.png)
@@ -99,7 +99,7 @@ Podemos consultar informacion sobre los gases (**PM2.5, PM10, SO2, NO2, CO2**)..
 
 
 
-
+<br/><br/>
 ## POLITICA DE PRIVACIDAD
 
 ![Privacy](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/privacy.png)
