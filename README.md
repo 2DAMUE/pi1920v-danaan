@@ -1,28 +1,40 @@
 # AirMadrid
 Created by: Andrea Muñoz, Daniel Alonso, Ignacio López
 
-INTRO
+##INTRO
 
 
 ![Intro](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/Intro.png)
 
 
-SPLASH
+##SPLASH
 
+La aplicación se lanza con un splash animado, en el cual, la “i” de Air está representada por un molino de viento con sus hélices en movimiento.
 
 ![Splash](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/splash.png)
 
 
-LOGIN & REGISTRO
+##LOGIN & REGISTRO
 
+A continuación pasaremos a la pantalla de login con el que podrás acceder a la aplicación con tu email y con tu contraseña.
+
+En el caso de que no estés registrado, con el botón de **crear cuenta accederás** a la ventana de registro.
 
 ![Login&registro](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/Login&Reg.png)
 
 
-HOME
+##HOME
 
+Tras logearnos con éxito y entrar en la aplicación se nos abrirá la pantalla del HOME.
+Se trata de un ScrollView vertical que mostrará la información mas relevante de la aplicación, así como un Navigation Bar en la parte inferior para poder cambiar de pantallas
+
+**Al conectarse por primera vez nada más instalarlo, ir al mapa de la aplicación**
 
 ![Home1](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/home_principal.png)
+
+Según el ICA obtenido, el HOME cambiará su apariencia advirtiéndonos del grado de peligrosidad de la calidad del aire.
+
+
 ![Home2](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/home_colores.png)
 ![Home3](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/recomendaciones_salud.png)
 ![Home4](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/datos_gases.png)
@@ -31,7 +43,7 @@ HOME
 
 
 
-DIALOGFLOW
+##DIALOGFLOW
 
 Podemos consultar informacion sobre los gases...<br/>
 ![Dialog1](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/dialog1.png)
@@ -45,19 +57,19 @@ Podemos consultar informacion sobre los gases...<br/>
 
 
 
-MAPA
+##MAPA
 
 ![Mapa](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/mapa.png)
 
 
 
-TWITTER
+##TWITTER
 
 ![Twitter](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/twitter.png)
 
 
 
-POLITICA DE PRIVACIDAD
+##POLITICA DE PRIVACIDAD
 
 ![Privacy](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/privacy.png)
 
