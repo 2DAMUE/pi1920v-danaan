@@ -42,10 +42,9 @@ En el caso de que no estés registrado, con el botón de **crear cuenta** accede
 <br/><br/>
 ## HOME
 
-Tras logearnos con éxito y entrar en la aplicación se nos abrirá la pantalla del HOME.
+Tras logearnos con éxito y entrar en la aplicación se nos abrirá la pantalla del **HOME**.
 Se trata de un ScrollView vertical que mostrará la información mas relevante de la aplicación, así como un Navigation Bar en la parte inferior para poder cambiar de pantallas
 
-**Al conectarse por primera vez nada más instalarlo, ir al mapa de la aplicación**
 
 ![Home1](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/home_principal.png)
 
