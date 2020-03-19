@@ -54,3 +54,10 @@ MAPA
 TWITTER
 
 ![Twitter](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/twitter.png)
+
+
+
+POLITICA DE PRIVACIDAD
+
+![Privacy](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/privacy.png)
+
