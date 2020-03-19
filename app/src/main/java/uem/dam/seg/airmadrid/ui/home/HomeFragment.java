@@ -85,8 +85,8 @@ public class HomeFragment extends Fragment {
         cont = airMadridApplication.getCont();
         if (cont == 0) {
             AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-            builder.setTitle("AirMadrid dice:");
-            builder.setMessage("Recogiendo datos..");
+            builder.setTitle(R.string.titulo_ad);
+            builder.setMessage(R.string.msj_ad);
             builder.setPositiveButton(R.string.cerrar, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
