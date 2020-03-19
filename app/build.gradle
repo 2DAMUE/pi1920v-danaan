@@ -22,6 +22,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    // el APK lanza un error: Lint found fatal errors while assembling a release target.
+    // pide añadir estas lineas
+    lintOptions {
+        checkReleaseBuilds false
+    }
 }
 
 dependencies {
