@@ -63,19 +63,19 @@ Podemos consultar informacion sobre los gases (**PM2.5, PM10, SO2, NO2, CO2**)..
 
 
 
-##MAPA
+## MAPA
 
 ![Mapa](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/mapa.png)
 
 
 
-##TWITTER
+## TWITTER
 
 ![Twitter](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/twitter.png)
 
 
 
-##POLITICA DE PRIVACIDAD
+## POLITICA DE PRIVACIDAD
 
 ![Privacy](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/privacy.png)
 
