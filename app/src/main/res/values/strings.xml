@@ -148,5 +148,5 @@ I want to inform users of this Service that these third parties have access to y
     <string name="msj_recomendaciones">Pulse los iconos para más información sobre las recomendaciones</string>
     <string name="cerrar">Cerrar</string>
     <string name="titulo_ad">AirMadrid dice:</string>
-    <string name="msj_ad">Recogiendo datos.. \n\nSi ves el fondo azul ubícate en el mapa</string>
+    <string name="msj_ad">\nRecogiendo datos..</string>
 </resources>
