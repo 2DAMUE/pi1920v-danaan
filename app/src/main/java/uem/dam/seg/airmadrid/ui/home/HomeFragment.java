@@ -25,6 +25,8 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -88,14 +90,18 @@ public class HomeFragment extends Fragment {
             builder.setTitle(R.string.titulo_ad);
             builder.setMessage(R.string.msj_ad);
             builder.setIcon(R.drawable.helices_negro);
-            builder.setPositiveButton(R.string.cerrar, new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
 
+            final AlertDialog closedialog = builder.create();
+
+            closedialog.show();
+
+            final Timer timer2 = new Timer();
+            timer2.schedule(new TimerTask() {
+                public void run() {
+                    closedialog.dismiss();
+                    timer2.cancel(); // cancela el timer del sistema
                 }
-            });
-            AlertDialog dialog = builder.create();
-            dialog.show();
+            }, 3000);
 
             cont++;
             airMadridApplication.setCont(cont);
