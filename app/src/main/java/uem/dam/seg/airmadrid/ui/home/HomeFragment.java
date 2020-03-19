@@ -97,7 +97,6 @@ public class HomeFragment extends Fragment {
             dialog.show();
 
             cont++;
-
             airMadridApplication.setCont(cont);
         }
 

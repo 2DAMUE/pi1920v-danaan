@@ -15,7 +15,6 @@
         android:background="@color/skyBlue"/>
 
     <TextView
-        android:id="@+id/tvPoliticaPrivadaTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/tv_politica_privada_titulo"
@@ -39,7 +38,6 @@
         android:padding="@dimen/padding">
 
         <TextView
-            android:id="@+id/tvPoliticaPrivada"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textSize="16sp"

@@ -15,7 +15,6 @@
     <string name="msj_registrado">Usuario registrado</string>
     <string name="msj_no_registrado">Usuario no registrado</string>
     <string name="msj_no_accede">Error de acceso</string>
-    <string name="title_activity_maps">Map</string>
     <string name="title_chat">Chat</string>
     <string name="title_mapa">Mapa</string>
     <string name="title_home">Home</string>
@@ -51,12 +50,7 @@ I want to inform users of this Service that these third parties have access to y
 \nIf you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me.\n\n
  andanauem@gmail.com</string>
     <string name="tv_politica_privada_titulo">Privacy Policy</string>
-    <string name="btn_cerrar_sesion">Cerrar Sesión</string>
-    <string name="btn_cambiar_usuario">Cambiar Usuario</string>
     <string name="tv_titulo_h">Contaminación del aire</string>
-    <string name="tv_localizacion_h">ALGETE, MADRID</string>
-    <string name="tv_cifra_global_h">74</string>
-    <string name="tv_grado_h">MODERADO</string>
     <string name="tv_pm25"><b>PM2.5</b> μg/m<sup>3</sup></string>
     <string name="tv_pm10"><b>PM10</b> μg/m<sup>3</sup></string>
     <string name="tv_so2"><b>SO2</b> μg/m<sup>3</sup></string>
