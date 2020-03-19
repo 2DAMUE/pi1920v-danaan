@@ -59,7 +59,10 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupWithNavController(navView, navController);
 
+        int cont = 0;
 
+        AirMadridApplication myApplication = (AirMadridApplication) getApplicationContext();
+        myApplication.setCont(cont);
     }
 
     public void infoPM25(View view) {

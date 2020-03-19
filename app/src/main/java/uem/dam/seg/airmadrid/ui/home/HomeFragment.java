@@ -1,5 +1,6 @@
 package uem.dam.seg.airmadrid.ui.home;
 
+import android.content.DialogInterface;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
@@ -14,6 +15,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
@@ -28,6 +30,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
+import uem.dam.seg.airmadrid.AirMadridApplication;
 import uem.dam.seg.airmadrid.MainActivity;
 import uem.dam.seg.airmadrid.R;
 import uem.dam.seg.airmadrid.javaBeans.Datos;
@@ -56,6 +59,8 @@ public class HomeFragment extends Fragment {
 
     private TextView tvLocalizacion;
 
+    private int cont = 0;
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel =
@@ -75,6 +80,26 @@ public class HomeFragment extends Fragment {
         iwMascarilla = root.findViewById(R.id.iwRecomendacion3);
         iwAire = root.findViewById(R.id.iwRecomendacion4);
         msjRecomendaciones = root.findViewById(R.id.mensajeRecomendaciones);
+
+        AirMadridApplication airMadridApplication = (AirMadridApplication) getActivity().getApplicationContext();
+        cont = airMadridApplication.getCont();
+        if (cont == 0) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+            builder.setTitle("AirMadrid dice:");
+            builder.setMessage("Recogiendo datos..");
+            builder.setPositiveButton(R.string.cerrar, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+
+                }
+            });
+            AlertDialog dialog = builder.create();
+            dialog.show();
+
+            cont++;
+
+            airMadridApplication.setCont(cont);
+        }
 
         return root;
     }
