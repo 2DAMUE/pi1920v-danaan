@@ -27,5 +27,7 @@ HOME
 
 ![Home3](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/home_colores.png)
 
+![Home4](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/datos_gases.png)
+
 
 
