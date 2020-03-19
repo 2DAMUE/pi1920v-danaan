@@ -34,6 +34,8 @@ Se trata de un ScrollView vertical que mostrará la información mas relevante d
 
 Según el ICA obtenido, el HOME cambiará su apariencia advirtiéndonos del grado de peligrosidad de la calidad del aire.
 
+Las recomendaciones de salud serán distintas en función del indice de peligrosidad.
+
 
 ![Home2](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/home_colores.png)
 ![Home3](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/recomendaciones_salud.png)
