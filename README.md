@@ -18,11 +18,15 @@ Created by: Andrea Muñoz, Daniel Alonso, Ignacio López
 ![Intro](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/Intro.png)
 
 
+
+
 ## SPLASH
 
 La aplicación se lanza con un splash animado, en el cual, la “i” de Air está representada por un molino de viento con sus hélices en movimiento.
 
 ![Splash](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/splashh.png)
+
+
 
 
 ## LOGIN & REGISTRO
@@ -32,6 +36,8 @@ A continuación pasaremos a la pantalla de login con el que podrás acceder a la
 En el caso de que no estés registrado, con el botón de **crear cuenta** accederás a la ventana de registro.
 
 ![Login&registro](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/Login&Reg.png)
+
+
 
 
 ## HOME
@@ -60,6 +66,8 @@ Haciendo click en los contaminantes se abrirá un alertDialog que proporcionará
 
 
 
+
+
 ## DIALOGFLOW
 
 Podemos consultar informacion sobre los gases (**PM2.5, PM10, SO2, NO2, CO2**)...<br/>
@@ -74,15 +82,21 @@ Podemos consultar informacion sobre los gases (**PM2.5, PM10, SO2, NO2, CO2**)..
 
 
 
+
+
 ## MAPA
 
 ![Mapa](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/mapa.png)
 
 
 
+
+
 ## TWITTER
 
 ![Twitter](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/twitter.png)
+
+
 
 
 
