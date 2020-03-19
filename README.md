@@ -11,7 +11,7 @@ Created by: Andrea Muñoz, Daniel Alonso, Ignacio López
 
 La aplicación se lanza con un splash animado, en el cual, la “i” de Air está representada por un molino de viento con sus hélices en movimiento.
 
-![Splash](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/splashh.png)
+![Splash](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/splashh.jpeg)
 
 
 ## LOGIN & REGISTRO
