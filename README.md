@@ -45,3 +45,8 @@ Podemos consultar informacion sobre los gases...<br/>
 
 
 
+
+MAPA
+
+![Mapa](https://github.com/2DAMUE/pi1920v-danaan/blob/master/images_readme/mapa.png)
+
