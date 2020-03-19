@@ -87,6 +87,7 @@ public class HomeFragment extends Fragment {
             AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
             builder.setTitle(R.string.titulo_ad);
             builder.setMessage(R.string.msj_ad);
+            builder.setIcon(R.drawable.mapa_negro);
             builder.setPositiveButton(R.string.cerrar, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {

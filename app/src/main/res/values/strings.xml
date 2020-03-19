@@ -19,7 +19,7 @@
     <string name="title_mapa">Mapa</string>
     <string name="title_home">Home</string>
     <string name="title_redes">Twitter</string>
-    <string name="title_privacy">Privacy</string>
+    <string name="title_privacy">Privacidad</string>
     <string name="tv_politica_privada">Built the [AIR MADRID] app as a Free app. This SERVICE is provided by at no cost and is intended for use as is.
 \nThis page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.
  \nIf you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.
@@ -148,5 +148,5 @@ I want to inform users of this Service that these third parties have access to y
     <string name="msj_recomendaciones">Pulse los iconos para más información sobre las recomendaciones</string>
     <string name="cerrar">Cerrar</string>
     <string name="titulo_ad">AirMadrid dice:</string>
-    <string name="msj_ad">Recogiendo datos.. \n\n* Si es la primera vez que se ejecuta la aplicación es necesario ir al mapa y aceptar los permisos de ubicación</string>
+    <string name="msj_ad">Recogiendo datos.. \n\nSi ves el fondo azul ubícate en el mapa</string>
 </resources>
