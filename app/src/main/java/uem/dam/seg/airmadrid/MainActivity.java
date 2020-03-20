@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         localizaciones.add(new LocalizacionEstacion(new LatLng(40.4215533, -3.6823158),"008","Escuelas Aguirre"));
         localizaciones.add(new LocalizacionEstacion(new LatLng(40.4514734, -3.6773491), "011","Avda. Ramón y Cajal"));
         localizaciones.add(new LocalizacionEstacion(new LatLng(40.4400457, -3.6392422),"016","Arturo Soria"));
-        localizaciones.add(new LocalizacionEstacion(new LatLng(40.347147, 3.7133167),"017","Villaverde"));
+        localizaciones.add(new LocalizacionEstacion(new LatLng(40.347147, -3.7133167),"017","Villaverde"));
         localizaciones.add(new LocalizacionEstacion(new LatLng(40.3947825, -3.7318356),"018","Farolillo"));
         localizaciones.add(new LocalizacionEstacion(new LatLng(40.4193577, -3.7473445),"024","Casa de Campo"));
         localizaciones.add(new LocalizacionEstacion(new LatLng(40.4769179, -3.5800258),"027","Barajas Pueblo"));
