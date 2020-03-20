@@ -45,8 +45,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegistroActivity" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".RegistroActivity"
+            android:screenOrientation="locked"/>
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="locked">
         </activity>
         <activity
             android:name=".MainActivity"
