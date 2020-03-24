@@ -40,7 +40,7 @@
             android:value="@string/google_maps_key" />
 
         <activity android:name=".SplashScreen"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"> <!-- si da error la orientación, se soluciona añadiendo tools:ignore="LockedOrientationActivity"-->
            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
