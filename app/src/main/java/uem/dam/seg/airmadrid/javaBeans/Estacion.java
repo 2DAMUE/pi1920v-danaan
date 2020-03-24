@@ -3,7 +3,6 @@ package uem.dam.seg.airmadrid.javaBeans;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-import java.util.Date;
 
 @Root(name = "Dato_Horario")
 public class Estacion {
