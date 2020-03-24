@@ -1,6 +1,5 @@
 package uem.dam.seg.airmadrid.ui.home;
 
-import android.content.DialogInterface;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
