@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -34,6 +35,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText etEmail;
     EditText etPwd;
     ProgressBar pb;
+    Button btnEntrar;
 
     String email;
     String pwd;
@@ -54,6 +56,7 @@ public class LoginActivity extends AppCompatActivity {
         etEmail = findViewById(R.id.etEmail);
         etPwd = findViewById(R.id.etContrasena);
         pb = findViewById(R.id.progressBar);
+        btnEntrar = findViewById(R.id.btnEntrar);
 
         pb.setVisibility(View.GONE);
 
@@ -88,6 +91,8 @@ public class LoginActivity extends AppCompatActivity {
                     if (task.isSuccessful()) {
 
                         fu = fa.getCurrentUser();
+
+                        btnEntrar.setEnabled(false);
 
                         pb.setVisibility(View.VISIBLE);
 
