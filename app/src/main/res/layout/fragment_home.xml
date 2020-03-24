@@ -277,6 +277,7 @@
                 android:background="@color/skyBlue"
                 android:alpha="0.5"
                 android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:onClick="escenarios"/>
 
         <ImageView

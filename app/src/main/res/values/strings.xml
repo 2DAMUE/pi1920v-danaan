@@ -9,11 +9,11 @@
     <string name="tv_registro">Crear cuenta</string>
     <string name="et_nombre_comp_reg">Nombre completo</string>
     <string name="et_mail_reg">Email</string>
-    <string name="et_pass_reg">Contraseña</string>
+    <string name="et_pass_reg">Contraseña de seis caracteres</string>
     <string name="tv_ini_sesion">INICIAR SESION</string>
     <string name="no_datos">Debe introducir todos los datos</string>
     <string name="msj_registrado">Usuario registrado</string>
-    <string name="msj_no_registrado">Usuario no registrado</string>
+    <string name="msj_no_registrado">Debes introducir al menos seis caracteres en el pasword</string>
     <string name="msj_no_accede">Error de acceso</string>
     <string name="title_chat">Chat</string>
     <string name="title_mapa">Mapa</string>
