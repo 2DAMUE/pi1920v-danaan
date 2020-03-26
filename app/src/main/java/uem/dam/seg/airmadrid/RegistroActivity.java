@@ -58,7 +58,7 @@ public class RegistroActivity extends AppCompatActivity {
                         startActivity(i);
                         Toast.makeText(RegistroActivity.this, getString(R.string.msj_registrado), Toast.LENGTH_SHORT).show();
                     } else {
-                        Toast.makeText(RegistroActivity.this, getString(R.string.msj_no_registrado), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(RegistroActivity.this, getString(R.string.msj_no_registrado), Toast.LENGTH_LONG).show();
                     } } });
 
         }
